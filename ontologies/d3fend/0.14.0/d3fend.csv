@@ -176,6 +176,7 @@ D3-CR,Evict,,Credential Revoking,,Deleting a set of credentials permanently to p
 D3-ANCI,Evict,,Authentication Cache Invalidation,,Removing tokens or credentials from an authentication cache to prevent further user associated account accesses.
 D3-AL,Evict,,Account Locking,,The process of temporarily disabling user accounts on a system or domain.
 D3-PE,Evict,Process Eviction,,,
+D3-SYSSR,Evict,,System Shutdown/Reboot,,Initiating a system's shutdown or reboot sequence to terminate all running processes.
 D3-PT,Evict,,Process Termination,,Terminating a running application process on a computer system.
 D3-PS,Evict,,Process Suspension,,Suspending a running process on a computer system.
 D3-FEV,Evict,File Eviction,,,
