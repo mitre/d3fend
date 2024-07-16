@@ -1,0 +1,428 @@
+{
+    "nodes": [
+        {
+            "id": "0.28745244020819394",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": -97.45624356799345,
+                "y": -486.41580708471406
+            },
+            "data": {
+                "label": "OS API Write File",
+                "sequence": "0"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 187,
+                "height": 69
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.9734359398205206",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 296.98873576274076,
+                "y": -474.58176656760077
+            },
+            "data": {
+                "label": "Write File",
+                "sequence": "0"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 187,
+                "height": 69
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.2991290665885308",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": -124.70697200577503,
+                "y": -286.12331949494006
+            },
+            "data": {
+                "label": "Malware BUSHWALK - S1118",
+                "sequence": "0"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 187,
+                "height": 69
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.12193705870339033",
+            "type": "eventNode",
+            "position": {
+                "x": 518.4714092592948,
+                "y": -594.8611042634378
+            },
+            "data": {
+                "label": "Create File Event",
+                "sequence": "0"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 187,
+                "height": 66
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.09193859368571666",
+            "type": "attackSelectorNode",
+            "position": {
+                "x": -455.6557248415316,
+                "y": -286.6295900554935
+            },
+            "data": {
+                "label": "T1554",
+                "sequence": "0"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 187,
+                "height": 53
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.026668828190339",
+            "type": "agentSelectorNode",
+            "position": {
+                "x": -489.37052953290413,
+                "y": -570.6508482305883
+            },
+            "data": {
+                "label": "attacker",
+                "sequence": "0"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 187,
+                "height": 51
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.7438529946288932",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 737.85541880982,
+                "y": -475.6407074238169
+            },
+            "data": {
+                "label": "d3f:OperatingSystemExecutableFile",
+                "sequence": "0"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 187,
+                "height": 69
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.8639284363107326",
+            "type": "countermeasureSelectorNode",
+            "position": {
+                "x": -124.853987768107,
+                "y": -126.22264306364235
+            },
+            "data": {
+                "label": "D3-EAL",
+                "sequence": "0"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 187,
+                "height": 68
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.1803005710496245",
+            "type": "countermeasureSelectorNode",
+            "position": {
+                "x": 295.87508120312754,
+                "y": -701.9008044548227
+            },
+            "data": {
+                "label": "d3f:SystemCallAnalysis",
+                "sequence": "1"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 187,
+                "height": 68
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.3180850673915423",
+            "type": "countermeasureSelectorNode",
+            "position": {
+                "x": 733.5290198209702,
+                "y": -697.3687809996632
+            },
+            "data": {
+                "label": "d3f:FileAnalysis",
+                "sequence": "2"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 187,
+                "height": 68
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.3615545411229423",
+            "type": "countermeasureSelectorNode",
+            "position": {
+                "x": 983.5091128050223,
+                "y": -700.4538274042884
+            },
+            "data": {
+                "label": "d3f:FileIntegrityMonitoring",
+                "sequence": "3"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 187,
+                "height": 68
+            },
+            "selected": false,
+            "dragging": false
+        }
+    ],
+    "edges": [
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "invokes"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.28745244020819394",
+            "sourceHandle": "artRightSource",
+            "target": "0.9734359398205206",
+            "targetHandle": "vulnerabilityLeftTarget",
+            "id": "xy-edge__0.28745244020819394artRightSource-0.9734359398205206vulnerabilityLeftTarget",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "contains"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.28745244020819394",
+            "sourceHandle": "artBottomSource",
+            "target": "0.2991290665885308",
+            "targetHandle": "artTopTarget",
+            "id": "xy-edge__0.28745244020819394artBottomSource-0.2991290665885308artTopTarget",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "uses-tool"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.09193859368571666",
+            "sourceHandle": "attackRightSource",
+            "target": "0.2991290665885308",
+            "targetHandle": "attackLeftTarget",
+            "id": "xy-edge__0.09193859368571666attackRightSource-0.2991290665885308attackLeftTarget",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "executes"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.026668828190339",
+            "sourceHandle": "artBottomSource",
+            "target": "0.09193859368571666",
+            "targetHandle": "attackTopTarget",
+            "id": "xy-edge__0.026668828190339artBottomSource-0.09193859368571666attackTopTarget",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "overwrites"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.9734359398205206",
+            "sourceHandle": "artRightSource",
+            "target": "0.7438529946288932",
+            "targetHandle": "artLeftTarget",
+            "id": "xy-edge__0.9734359398205206artRightSource-0.7438529946288932artLeftTarget",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "denies"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.2991290665885308",
+            "sourceHandle": "artBottomSource",
+            "target": "0.8639284363107326",
+            "targetHandle": "defenseTopTarget",
+            "id": "xy-edge__0.2991290665885308artBottomSource-0.8639284363107326defenseTopTarget",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "requires"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.026668828190339",
+            "sourceHandle": "artBottomSource",
+            "target": "0.2991290665885308",
+            "targetHandle": "artTopTarget",
+            "id": "xy-edge__0.026668828190339artBottomSource-0.2991290665885308artTopTarget",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "analyzes"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.1803005710496245",
+            "sourceHandle": "defenseBottomSource",
+            "target": "0.9734359398205206",
+            "targetHandle": "artTopTarget",
+            "id": "xy-edge__0.1803005710496245defenseBottomSource-0.9734359398205206artTopTarget",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "monitors"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.3180850673915423",
+            "sourceHandle": "defenseBottomSource",
+            "target": "0.7438529946288932",
+            "targetHandle": "artTopTarget",
+            "id": "xy-edge__0.3180850673915423defenseBottomSource-0.7438529946288932artTopTarget",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "monitors"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.3615545411229423",
+            "sourceHandle": "defenseBottomSource",
+            "target": "0.7438529946288932",
+            "targetHandle": "artTopTarget",
+            "id": "xy-edge__0.3615545411229423defenseBottomSource-0.7438529946288932artTopTarget",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "event-initator"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.12193705870339033",
+            "sourceHandle": "artBottomSource",
+            "target": "0.9734359398205206",
+            "targetHandle": "artTopTarget",
+            "id": "xy-edge__0.12193705870339033artBottomSource-0.9734359398205206artTopTarget",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "event-target"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.12193705870339033",
+            "sourceHandle": "artBottomSource",
+            "target": "0.7438529946288932",
+            "targetHandle": "artTopTarget",
+            "id": "xy-edge__0.12193705870339033artBottomSource-0.7438529946288932artTopTarget",
+            "selected": false
+        }
+    ]
+}
