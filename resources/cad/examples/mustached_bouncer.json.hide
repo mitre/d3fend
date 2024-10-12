@@ -1,0 +1,1164 @@
+{
+    "nodes": [
+        {
+            "id": "0",
+            "type": "attackSelectorNode",
+            "data": {
+                "label": "CAPEC-94: Adversary in the Middle",
+                "sequence": "t=1"
+            },
+            "position": {
+                "x": -62.65978993510821,
+                "y": 6.933755569143955
+            },
+            "measured": {
+                "width": 188,
+                "height": 55
+            },
+            "selected": false,
+            "dragging": false,
+            "computed": {
+                "positionAbsolute": {
+                    "x": -62.65978993510821,
+                    "y": 6.933755569143955
+                },
+                "width": 188,
+                "height": 55
+            }
+        },
+        {
+            "id": "1",
+            "type": "attackSelectorNode",
+            "data": {
+                "label": "T1557: Adversary in the Middle",
+                "sequence": "t=1"
+            },
+            "position": {
+                "x": -226.6950883242129,
+                "y": 192.2701493824303
+            },
+            "measured": {
+                "width": 188,
+                "height": 55
+            },
+            "selected": false,
+            "dragging": false,
+            "computed": {
+                "positionAbsolute": {
+                    "x": -226.6950883242129,
+                    "y": 192.2701493824303
+                },
+                "width": 188,
+                "height": 55
+            }
+        },
+        {
+            "id": "2",
+            "type": "artifactSelectorNode",
+            "data": {
+                "label": "Process"
+            },
+            "position": {
+                "x": 528.3640621364214,
+                "y": 855.9556649087007
+            },
+            "measured": {
+                "width": 188,
+                "height": 51
+            },
+            "selected": false,
+            "dragging": false,
+            "computed": {
+                "positionAbsolute": {
+                    "x": 528.3640621364214,
+                    "y": 855.9556649087007
+                },
+                "width": 188,
+                "height": 51
+            }
+        },
+        {
+            "id": "3",
+            "type": "countermeasureSelectorNode",
+            "data": {
+                "label": "Process Verification",
+                "sequence": "t=2"
+            },
+            "position": {
+                "x": 1244.6050156716017,
+                "y": 774.0172661702135
+            },
+            "measured": {
+                "width": 188,
+                "height": 55
+            },
+            "selected": false,
+            "dragging": false,
+            "computed": {
+                "positionAbsolute": {
+                    "x": 1244.6050156716017,
+                    "y": 774.0172661702135
+                },
+                "width": 188,
+                "height": 55
+            }
+        },
+        {
+            "id": "4",
+            "type": "attackSelectorNode",
+            "data": {
+                "label": "T1036.004: Masquerade Task or Service",
+                "sequence": "t=2"
+            },
+            "position": {
+                "x": -226.91529768309175,
+                "y": 539.3871085760582
+            },
+            "measured": {
+                "width": 188,
+                "height": 55
+            },
+            "selected": false,
+            "dragging": false,
+            "computed": {
+                "positionAbsolute": {
+                    "x": -226.91529768309175,
+                    "y": 539.3871085760582
+                },
+                "width": 188,
+                "height": 55
+            }
+        },
+        {
+            "id": "6",
+            "type": "vulnerabilitySelectorNode",
+            "data": {
+                "label": "CVE-2017-12151",
+                "weakness": "CWE-300"
+            },
+            "position": {
+                "x": 495.01838055883456,
+                "y": -8.8047243383661
+            },
+            "measured": {
+                "width": 188,
+                "height": 68
+            },
+            "selected": false,
+            "dragging": false,
+            "computed": {
+                "positionAbsolute": {
+                    "x": 460.24812704960675,
+                    "y": 70.06576196308521
+                },
+                "width": 188,
+                "height": 51
+            }
+        },
+        {
+            "id": "7",
+            "type": "conditionDefinitionNode",
+            "data": {
+                "label": "Execution Privilege"
+            },
+            "position": {
+                "x": 129.5894009949365,
+                "y": 687.1730282988859
+            },
+            "measured": {
+                "width": 188,
+                "height": 51
+            },
+            "selected": false,
+            "dragging": false,
+            "computed": {
+                "positionAbsolute": {
+                    "x": 129.5894009949365,
+                    "y": 687.1730282988859
+                },
+                "width": 188,
+                "height": 51
+            }
+        },
+        {
+            "id": "8",
+            "type": "conditionDefinitionNode",
+            "data": {
+                "label": "Compromised Data Channel"
+            },
+            "position": {
+                "x": 177.42985569922024,
+                "y": 192.88829636435582
+            },
+            "measured": {
+                "width": 188,
+                "height": 51
+            },
+            "selected": false,
+            "dragging": false,
+            "computed": {
+                "positionAbsolute": {
+                    "x": 177.42985569922024,
+                    "y": 192.88829636435582
+                },
+                "width": 188,
+                "height": 51
+            }
+        },
+        {
+            "id": "10",
+            "type": "countermeasureSelectorNode",
+            "data": {
+                "label": "Mandatory Access Control",
+                "sequence": "t=0"
+            },
+            "position": {
+                "x": 1615.330880824405,
+                "y": 875.849038185212
+            },
+            "measured": {
+                "width": 188,
+                "height": 55
+            },
+            "selected": false,
+            "dragging": false,
+            "computed": {
+                "positionAbsolute": {
+                    "x": 1615.330880824405,
+                    "y": 875.849038185212
+                },
+                "width": 188,
+                "height": 55
+            }
+        },
+        {
+            "id": "11",
+            "type": "countermeasureSelectorNode",
+            "data": {
+                "label": "Multifactor Authentication",
+                "sequence": "t=1"
+            },
+            "position": {
+                "x": 1425.113497455878,
+                "y": 246.25263913007734
+            },
+            "measured": {
+                "width": 188,
+                "height": 55
+            },
+            "selected": false,
+            "dragging": false,
+            "computed": {
+                "positionAbsolute": {
+                    "x": 1425.113497455878,
+                    "y": 246.25263913007734
+                },
+                "width": 188,
+                "height": 55
+            }
+        },
+        {
+            "id": "12",
+            "type": "artifactSelectorNode",
+            "data": {
+                "label": "Client Computer"
+            },
+            "position": {
+                "x": 971.4806457922735,
+                "y": 219.2410364648057
+            },
+            "measured": {
+                "width": 188,
+                "height": 51
+            },
+            "selected": false,
+            "dragging": false,
+            "computed": {
+                "positionAbsolute": {
+                    "x": 971.4806457922735,
+                    "y": 219.2410364648057
+                },
+                "width": 188,
+                "height": 51
+            }
+        },
+        {
+            "id": "13",
+            "type": "artifactSelectorNode",
+            "data": {
+                "label": "User Account"
+            },
+            "position": {
+                "x": 902.3271089359575,
+                "y": 645.6038532705195
+            },
+            "measured": {
+                "width": 188,
+                "height": 51
+            },
+            "selected": false,
+            "dragging": false,
+            "computed": {
+                "positionAbsolute": {
+                    "x": 902.3271089359575,
+                    "y": 645.6038532705195
+                },
+                "width": 188,
+                "height": 51
+            }
+        },
+        {
+            "id": "14",
+            "type": "artifactSelectorNode",
+            "data": {
+                "label": "User"
+            },
+            "position": {
+                "x": 1071.3212103900914,
+                "y": 367.95364610051763
+            },
+            "measured": {
+                "width": 188,
+                "height": 51
+            },
+            "selected": false,
+            "dragging": false,
+            "computed": {
+                "positionAbsolute": {
+                    "x": 1071.3212103900914,
+                    "y": 367.95364610051763
+                },
+                "width": 188,
+                "height": 51
+            }
+        },
+        {
+            "id": "0.7309189404807505",
+            "type": "conditionDefinitionNode",
+            "position": {
+                "x": 240.51688134854533,
+                "y": 425.79500911412663
+            },
+            "data": {
+                "label": "Weak User Authentication",
+                "sequence": "0"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 188,
+                "height": 51
+            },
+            "selected": false,
+            "dragging": false,
+            "computed": {
+                "positionAbsolute": {
+                    "x": 240.51688134854533,
+                    "y": 425.79500911412663
+                },
+                "width": 188,
+                "height": 51
+            }
+        },
+        {
+            "id": "0.35571274771954375",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 560.3027680850063,
+                "y": 217.80942554694406
+            },
+            "data": {
+                "label": "Data Channel",
+                "sequence": "0"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 188,
+                "height": 51
+            },
+            "selected": false,
+            "dragging": false,
+            "computed": {
+                "positionAbsolute": {
+                    "x": 560.3027680850063,
+                    "y": 217.80942554694406
+                },
+                "width": 188,
+                "height": 51
+            }
+        },
+        {
+            "id": "0.6928368144754263",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 1170.0533910701267,
+                "y": 32.41595026694182
+            },
+            "data": {
+                "label": "Client Application",
+                "sequence": "0"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 188,
+                "height": 51
+            },
+            "selected": false,
+            "dragging": false,
+            "computed": {
+                "positionAbsolute": {
+                    "x": 1170.0533910701267,
+                    "y": 32.41595026694182
+                },
+                "width": 188,
+                "height": 51
+            }
+        },
+        {
+            "id": "0.7360906427212425",
+            "type": "attackSelectorNode",
+            "position": {
+                "x": -277.2480266500094,
+                "y": 769.9962690205233
+            },
+            "data": {
+                "label": "((END))",
+                "sequence": "+00"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 188,
+                "height": 55
+            },
+            "selected": false,
+            "dragging": false,
+            "computed": {
+                "positionAbsolute": {
+                    "x": -277.2480266500094,
+                    "y": 769.9962690205233
+                },
+                "width": 188,
+                "height": 55
+            }
+        },
+        {
+            "id": "0.12367384897689515",
+            "type": "attackSelectorNode",
+            "position": {
+                "x": -265.5182464757735,
+                "y": -56.7986546384505
+            },
+            "data": {
+                "label": "(START)",
+                "sequence": "t=1"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 188,
+                "height": 55
+            },
+            "selected": false,
+            "dragging": false,
+            "computed": {
+                "positionAbsolute": {
+                    "x": -265.5182464757735,
+                    "y": -56.7986546384505
+                },
+                "width": 188,
+                "height": 55
+            }
+        },
+        {
+            "id": "0.288310609625414",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 391.81924097060374,
+                "y": 341.1025339902503
+            },
+            "data": {
+                "label": "Credential",
+                "sequence": "0"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 188,
+                "height": 51
+            },
+            "selected": false,
+            "dragging": false,
+            "computed": {
+                "positionAbsolute": {
+                    "x": 391.81924097060374,
+                    "y": 341.1025339902503
+                },
+                "width": 188,
+                "height": 51
+            }
+        },
+        {
+            "id": "0.7275091815275674",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 549.757422832643,
+                "y": 492.8162891186022
+            },
+            "data": {
+                "label": "Service",
+                "sequence": "0"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 188,
+                "height": 51
+            },
+            "selected": false,
+            "dragging": false,
+            "computed": {
+                "positionAbsolute": {
+                    "x": 549.757422832643,
+                    "y": 492.8162891186022
+                },
+                "width": 188,
+                "height": 51
+            }
+        },
+        {
+            "id": "0.24867744701603156",
+            "type": "countermeasureSelectorNode",
+            "position": {
+                "x": 1508.5029810963347,
+                "y": 17.346706589093287
+            },
+            "data": {
+                "label": "Software Updatae",
+                "sequence": "t=0"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 188,
+                "height": 55
+            },
+            "selected": false,
+            "dragging": false,
+            "computed": {
+                "positionAbsolute": {
+                    "x": 1508.5029810963347,
+                    "y": 17.346706589093287
+                },
+                "width": 188,
+                "height": 55
+            }
+        },
+        {
+            "id": "0.7559552076065711",
+            "type": "agentSelectorNode",
+            "position": {
+                "x": -609.5954364660714,
+                "y": -146.36141953359015
+            },
+            "data": {
+                "label": "APT Agent",
+                "sequence": "0"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "computed": {
+                "positionAbsolute": {
+                    "x": -576.4409319766996,
+                    "y": -69.105000959476
+                },
+                "width": 188,
+                "height": 51
+            },
+            "selected": false,
+            "dragging": false,
+            "measured": {
+                "width": 188,
+                "height": 51
+            }
+        }
+    ],
+    "edges": [
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "exploits"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "label": "edge label TBD",
+            "source": "1",
+            "sourceHandle": "source",
+            "target": "6",
+            "targetHandle": "target",
+            "id": "xy-edge__1source-6target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "has-account"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "label": "edge label TBD",
+            "source": "12",
+            "sourceHandle": "source",
+            "target": "13",
+            "targetHandle": "target",
+            "id": "xy-edge__12source-13target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "authenticates"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "label": "edge label TBD",
+            "source": "11",
+            "sourceHandle": "source",
+            "target": "13",
+            "targetHandle": "target",
+            "id": "xy-edge__11source-13target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "precedes"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "label": "edge label TBD",
+            "source": "1",
+            "sourceHandle": "source",
+            "target": "4",
+            "targetHandle": "target",
+            "id": "xy-edge__1source-4target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "verifies"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "label": "edge label TBD",
+            "source": "3",
+            "sourceHandle": "source",
+            "target": "2",
+            "targetHandle": "target",
+            "id": "xy-edge__3source-2target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "has-effect"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "label": "edge label TBD",
+            "source": "4",
+            "sourceHandle": "source",
+            "target": "7",
+            "targetHandle": "target",
+            "id": "xy-edge__4source-7target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "has-effect"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "label": "edge label TBD",
+            "source": "1",
+            "sourceHandle": "source",
+            "target": "8",
+            "targetHandle": "target",
+            "id": "xy-edge__1source-8target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "prevents"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "label": "edge label TBD",
+            "source": "11",
+            "sourceHandle": "source",
+            "target": "0.7309189404807505",
+            "targetHandle": "target",
+            "id": "xy-edge__11source-0.7309189404807505target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "has-effect"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "label": "edge label TBD",
+            "source": "1",
+            "sourceHandle": "source",
+            "target": "0.7309189404807505",
+            "targetHandle": "target",
+            "id": "xy-edge__1source-0.7309189404807505target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "prevents"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "label": "edge label TBD",
+            "source": "3",
+            "sourceHandle": "source",
+            "target": "7",
+            "targetHandle": "target",
+            "id": "xy-edge__3source-7target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "state-of"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "label": "edge label TBD",
+            "source": "8",
+            "sourceHandle": "source",
+            "target": "0.35571274771954375",
+            "targetHandle": "target",
+            "id": "xy-edge__8source-0.35571274771954375target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "runs"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "label": "edge label TBD",
+            "source": "12",
+            "sourceHandle": "source",
+            "target": "2",
+            "targetHandle": "target",
+            "id": "xy-edge__12source-2target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "state-of"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "label": "edge label TBD",
+            "source": "7",
+            "sourceHandle": "source",
+            "target": "2",
+            "targetHandle": "target",
+            "id": "xy-edge__7source-2target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "has-endpoint"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "label": "edge label TBD",
+            "source": "0.35571274771954375",
+            "sourceHandle": "source",
+            "target": "12",
+            "targetHandle": "target",
+            "id": "xy-edge__0.35571274771954375source-12target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "precedes"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "label": "edge label TBD",
+            "source": "11",
+            "sourceHandle": "source",
+            "target": "3",
+            "targetHandle": "target",
+            "id": "xy-edge__11source-3target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "authorizes"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "label": "edge label TBD",
+            "source": "10",
+            "sourceHandle": "source",
+            "target": "2",
+            "targetHandle": "target",
+            "id": "xy-edge__10source-2target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "requires"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "4",
+            "sourceHandle": "source",
+            "target": "0.7309189404807505",
+            "targetHandle": "target",
+            "id": "xy-edge__4source-0.7309189404807505target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "has-account"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "14",
+            "sourceHandle": "source",
+            "target": "13",
+            "targetHandle": "target",
+            "id": "xy-edge__14source-13target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "state-of"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "7",
+            "sourceHandle": "source",
+            "target": "13",
+            "targetHandle": "target",
+            "id": "xy-edge__7source-13target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "contained-by"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.6928368144754263",
+            "sourceHandle": "source",
+            "target": "12",
+            "targetHandle": "target",
+            "id": "xy-edge__0.6928368144754263source-12target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "vulnerability-of"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "6",
+            "sourceHandle": "source",
+            "target": "0.6928368144754263",
+            "targetHandle": "target",
+            "id": "xy-edge__6source-0.6928368144754263target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "ends"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "4",
+            "sourceHandle": "source",
+            "target": "0.7360906427212425",
+            "targetHandle": "target",
+            "id": "xy-edge__4source-0.7360906427212425target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "starts"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.12367384897689515",
+            "sourceHandle": "source",
+            "target": "1",
+            "targetHandle": "target",
+            "id": "xy-edge__0.12367384897689515source-1target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "equivalent-to"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0",
+            "sourceHandle": "source",
+            "target": "1",
+            "targetHandle": "target",
+            "id": "xy-edge__0source-1target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "goal"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.7360906427212425",
+            "sourceHandle": "source",
+            "target": "7",
+            "targetHandle": "target",
+            "id": "xy-edge__0.7360906427212425source-7target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "exploits"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0",
+            "sourceHandle": "source",
+            "target": "6",
+            "targetHandle": "target",
+            "id": "xy-edge__0source-6target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "state-of"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.7309189404807505",
+            "sourceHandle": "source",
+            "target": "0.6928368144754263",
+            "targetHandle": "target",
+            "id": "xy-edge__0.7309189404807505source-0.6928368144754263target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "prevents"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "10",
+            "sourceHandle": "source",
+            "target": "7",
+            "targetHandle": "target",
+            "id": "xy-edge__10source-7target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "spoofs"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "1",
+            "sourceHandle": "source",
+            "target": "0.288310609625414",
+            "targetHandle": "target",
+            "id": "xy-edge__1source-0.288310609625414target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "authenticates"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.288310609625414",
+            "sourceHandle": "source",
+            "target": "13",
+            "targetHandle": "target",
+            "id": "xy-edge__0.288310609625414source-13target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "provided-by"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.7275091815275674",
+            "sourceHandle": "source",
+            "target": "12",
+            "targetHandle": "target",
+            "id": "xy-edge__0.7275091815275674source-12target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "hardens"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "4",
+            "sourceHandle": "source",
+            "target": "0.7275091815275674",
+            "targetHandle": "target",
+            "id": "xy-edge__4source-0.7275091815275674target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "hardens"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.24867744701603156",
+            "sourceHandle": "source",
+            "target": "0.6928368144754263",
+            "targetHandle": "target",
+            "id": "xy-edge__0.24867744701603156source-0.6928368144754263target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "precedes"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "10",
+            "sourceHandle": "source",
+            "target": "11",
+            "targetHandle": "target",
+            "id": "xy-edge__10source-11target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "edge label TBD"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.24867744701603156",
+            "sourceHandle": "source",
+            "target": "11",
+            "targetHandle": "target",
+            "id": "xy-edge__0.24867744701603156source-11target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "performs"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.7559552076065711",
+            "sourceHandle": "source",
+            "target": "0.12367384897689515",
+            "targetHandle": "target",
+            "id": "xyflow__edge-0.7559552076065711source-0.12367384897689515target",
+            "selected": false
+        }
+    ]
+}

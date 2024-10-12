@@ -1,0 +1,1650 @@
+{
+    "meta": {
+        "title": "Modeling \"sandcat\" report from Cyble",
+        "authors": [
+            "Peter Kaloroumakis"
+        ],
+        "orgs": [
+            "MITRE Corporation"
+        ],
+        "description": "Modeling the sandcat report to demonstrate CAD capabilities.",
+        "article": "",
+        "d3fend_version": "0.16.0",
+        "cad_schema_version": 1,
+        "published_date": "2024-10-04T00:30:00.000Z",
+        "references": [
+            "https://cyble.com/blog/operation-shadowcat-targeting-indian-political-observers-via-a-stealthy-rat/"
+        ],
+        "settings": {}
+    },
+    "nodes": [
+        {
+            "id": "0.581653696636286",
+            "type": "agentSelectorNode",
+            "position": {
+                "x": -423.6062717718771,
+                "y": -240.198589595253
+            },
+            "data": {
+                "label": "Shadowcat Attacker",
+                "sequence": "0",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 243,
+                "height": 107
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 243,
+            "height": 107
+        },
+        {
+            "id": "0.4413793232667994",
+            "type": "attackSelectorNode",
+            "position": {
+                "x": -267.8525450305963,
+                "y": -62.3136109397517
+            },
+            "data": {
+                "label": "Initial Access: Spearphishing Attachment",
+                "sequence": "0",
+                "d3f_class": "d3f:T1598.002",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 279,
+                "height": 93
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 279,
+            "height": 93
+        },
+        {
+            "id": "0.13256944195839404",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 213.3029750942008,
+                "y": 321.1215752403066
+            },
+            "data": {
+                "label": ".LNK File \"office doc\"",
+                "sequence": "0",
+                "d3f_class": "d3f:FileSystemLink",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 178,
+                "height": 80
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 178,
+            "height": 80
+        },
+        {
+            "id": "0.6071601385874087",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 209.96835792390914,
+                "y": -64.67806423823373
+            },
+            "data": {
+                "label": "Email",
+                "sequence": "0",
+                "d3f_class": "d3f:Email",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 176,
+                "height": 80
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 176,
+            "height": 80
+        },
+        {
+            "id": "0.42705486882231847",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 209.2630520996877,
+                "y": 61.07933072109077
+            },
+            "data": {
+                "label": "Email Attachment",
+                "sequence": "0",
+                "d3f_class": "d3f:EmailAttachment",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 177,
+                "height": 78
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 177,
+            "height": 78
+        },
+        {
+            "id": "0.4798872031112791",
+            "type": "attackSelectorNode",
+            "position": {
+                "x": -271.3253601599862,
+                "y": 303.3630009698479
+            },
+            "data": {
+                "label": "Execution: Malicious File",
+                "sequence": "1",
+                "d3f_class": "d3f:T1204.002",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 207,
+                "height": 107
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 207,
+            "height": 107
+        },
+        {
+            "id": "0.10426293338922998",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 211.13752703624448,
+                "y": -218.0156297879889
+            },
+            "data": {
+                "label": "Inbound Internet Mail Traffic",
+                "sequence": "0",
+                "d3f_class": "d3f:InboundInternetMailTraffic",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 204,
+                "height": 82
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 204,
+            "height": 82
+        },
+        {
+            "id": "0.25835674899524097",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 229.52181001394598,
+                "y": 625.5180979020506
+            },
+            "data": {
+                "label": "Inline Power Shell Script",
+                "sequence": "0",
+                "d3f_class": ":InlinePowerShellScript",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 214,
+                "height": 88
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 214,
+            "height": 88
+        },
+        {
+            "id": "0.7792835143423777",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 214.81813931789839,
+                "y": 483.00653438572215
+            },
+            "data": {
+                "label": "powershell.exe",
+                "sequence": "0",
+                "d3f_class": "d3f:ExecutableBinary",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 178,
+                "height": 81
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 178,
+            "height": 81
+        },
+        {
+            "id": "0.04249325034853346",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 572.0898252091145,
+                "y": 455.93690297886803
+            },
+            "data": {
+                "label": "DOCX Document File",
+                "sequence": "0",
+                "d3f_class": "d3f:DocumentFile",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 176,
+                "height": 99
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.3108464738831057",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 533.5525986474474,
+                "y": 782.2670466372585
+            },
+            "data": {
+                "label": "DLL .NET Loader ",
+                "sequence": "0",
+                "d3f_class": "d3f:SharedLibraryFile",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 176,
+                "height": 99
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.552059671457854",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 826.842115657484,
+                "y": 771.7946511022947
+            },
+            "data": {
+                "label": "Steno PNG File",
+                "sequence": "0",
+                "d3f_class": "d3f:DigitalInformationBearer",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 176,
+                "height": 99
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.2898381946203664",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 835.1114031895263,
+                "y": 927.376908943284
+            },
+            "data": {
+                "label": "Outbound Internet Web Traffic",
+                "sequence": "0",
+                "d3f_class": "d3f:OutboundInternetWebTraffic",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 227,
+                "height": 95
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 227,
+            "height": 95
+        },
+        {
+            "id": "0.7535326980747047",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 210.8543210597032,
+                "y": 189.08265439536297
+            },
+            "data": {
+                "label": "Zip File",
+                "sequence": "0",
+                "d3f_class": "d3f:ArchiveFile",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 176,
+                "height": 72
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 176,
+            "height": 72
+        },
+        {
+            "id": "0.3294135325329819",
+            "type": "attackSelectorNode",
+            "position": {
+                "x": -271.41748356949086,
+                "y": 478.77381183585794
+            },
+            "data": {
+                "label": "Masquerade File Type",
+                "sequence": "2",
+                "d3f_class": "d3f:T1036.008",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 209,
+                "height": 93
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 209,
+            "height": 93
+        },
+        {
+            "id": "0.9674498279207843",
+            "type": "attackSelectorNode",
+            "position": {
+                "x": -273.49845946640073,
+                "y": 652.862648368711
+            },
+            "data": {
+                "label": "File Deletion",
+                "sequence": "3",
+                "d3f_class": "d3f:T1107",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 213,
+                "height": 93
+            },
+            "selected": false,
+            "width": 213,
+            "height": 93,
+            "dragging": false
+        },
+        {
+            "id": "0.6835359685533496",
+            "type": "attackSelectorNode",
+            "position": {
+                "x": -276.60288076032884,
+                "y": 797.250395136911
+            },
+            "data": {
+                "label": "PowerShell",
+                "sequence": "4",
+                "d3f_class": "d3f:T1086",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 219,
+                "height": 98
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 219,
+            "height": 98
+        },
+        {
+            "id": "0.34778388263272275",
+            "type": "attackSelectorNode",
+            "position": {
+                "x": -274.81212059291977,
+                "y": 969.911380537678
+            },
+            "data": {
+                "label": "Native API",
+                "sequence": "5",
+                "d3f_class": "d3f:T1106",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 224,
+                "height": 93
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 224,
+            "height": 93
+        },
+        {
+            "id": "0.921380612603658",
+            "type": "attackSelectorNode",
+            "position": {
+                "x": -270.00385015759196,
+                "y": 1276.9159040584866
+            },
+            "data": {
+                "label": "Asynchronous Procedure Call",
+                "sequence": "7",
+                "d3f_class": "d3f:T1055.004",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 222,
+                "height": 100
+            },
+            "selected": false,
+            "width": 222,
+            "height": 100,
+            "dragging": false
+        },
+        {
+            "id": "0.7984230369581443",
+            "type": "attackSelectorNode",
+            "position": {
+                "x": -268.9562162010261,
+                "y": 1434.6361771344525
+            },
+            "data": {
+                "label": "Web Protocols",
+                "sequence": "8",
+                "d3f_class": "d3f:T1071.001",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 176,
+                "height": 123
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.21872006297325297",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 539.8671110601074,
+                "y": 986.2728500918984
+            },
+            "data": {
+                "label": "powershell.exe",
+                "sequence": "0",
+                "d3f_class": "d3f:ExecutableBinary",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 176,
+                "height": 99
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.03979030054819055",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 402.37472374100764,
+                "y": 1142.513939029318
+            },
+            "data": {
+                "label": "Inline Power Shell Script",
+                "sequence": "0",
+                "d3f_class": ":InlinePowerShellScript",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 214,
+                "height": 80
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 214,
+            "height": 80
+        },
+        {
+            "id": "0.9366371466114469",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 411.21102169602636,
+                "y": 1333.7071327598007
+            },
+            "data": {
+                "label": "Go RAT",
+                "sequence": "0",
+                "d3f_class": "d3f:ExecutableBinary",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 176,
+                "height": 99
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.6553811899665475",
+            "type": "countermeasureSelectorNode",
+            "position": {
+                "x": 714.9968077618944,
+                "y": 1327.6746304575581
+            },
+            "data": {
+                "label": "Yara Rule",
+                "sequence": "0",
+                "d3f_class": "d3f:FileContentRules",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 176,
+                "height": 110
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.5848797624184087",
+            "type": "countermeasureSelectorNode",
+            "position": {
+                "x": 897.5976569198427,
+                "y": 1154.439596377508
+            },
+            "data": {
+                "label": "Network Traffic Analysis",
+                "sequence": "0",
+                "d3f_class": "d3f:NetworkTrafficAnalysis",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 176,
+                "height": 110
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.9621202021427397",
+            "type": "countermeasureSelectorNode",
+            "position": {
+                "x": 847.967254746639,
+                "y": 610.1423327195739
+            },
+            "data": {
+                "label": "Executable Allowlisting",
+                "sequence": "0",
+                "d3f_class": "d3f:ExecutableAllowlisting",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 176,
+                "height": 110
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.30898977256836024",
+            "type": "countermeasureSelectorNode",
+            "position": {
+                "x": 569.9826692848965,
+                "y": 322.03242415284024
+            },
+            "data": {
+                "label": "Disable PowerShell",
+                "sequence": "0",
+                "d3f_class": "d3f:PlatformHardening",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 176,
+                "height": 110
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.48477799583965264",
+            "type": "countermeasureSelectorNode",
+            "position": {
+                "x": 1189.3479393663915,
+                "y": 842.6801313589822
+            },
+            "data": {
+                "label": "General Antivirus file scanning (all files)",
+                "sequence": "0",
+                "d3f_class": "d3f:FileContentAnalysis",
+                "user_properties": [
+                    [
+                        "comment",
+                        "broad recommendation"
+                    ]
+                ]
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 315,
+                "height": 163
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 315,
+            "height": 163
+        },
+        {
+            "id": "0.2898381946203664-copy0.13536047675435314",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 863.1141071164341,
+                "y": 1613.548890150405
+            },
+            "data": {
+                "label": "Outbound Internet Web Traffic",
+                "sequence": "0",
+                "d3f_class": "d3f:OutboundInternetWebTraffic",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 227,
+                "height": 95
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 227,
+            "height": 95
+        },
+        {
+            "id": "0.4032013612667408",
+            "type": "countermeasureSelectorNode",
+            "position": {
+                "x": 530.072110490575,
+                "y": 179.75690215566414
+            },
+            "data": {
+                "label": "Email Filtering",
+                "sequence": "0",
+                "d3f_class": "d3f:EmailFiltering",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 221,
+                "height": 100
+            },
+            "selected": false,
+            "width": 221,
+            "height": 100,
+            "dragging": false
+        },
+        {
+            "id": "0.8731411193589528",
+            "type": "countermeasureSelectorNode",
+            "position": {
+                "x": 575.863652303743,
+                "y": -121.64140048375452
+            },
+            "data": {
+                "label": "Dynamic Analysis",
+                "sequence": "0",
+                "d3f_class": "d3f:DynamicAnalysis",
+                "user_properties": []
+            },
+            "measured": {
+                "width": 224,
+                "height": 97
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "selected": false,
+            "dragging": false,
+            "width": 224,
+            "height": 97
+        },
+        {
+            "id": "0.7716786725845816",
+            "type": "noteNode",
+            "position": {
+                "x": 904.5819171585027,
+                "y": 19.647700076469555
+            },
+            "data": {
+                "label": "Additional D3FEND Recommendations",
+                "sequence": "0",
+                "user_properties": [
+                    [
+                        "rdfs:comment",
+                        "We recommend these additional countermeasures\nto deal with an attack like this earlier in the execution chain.\n"
+                    ]
+                ]
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 330,
+                "height": 142
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 330,
+            "height": 142
+        },
+        {
+            "id": "0.6074354245521373",
+            "type": "agentSelectorNode",
+            "position": {
+                "x": 901.4255422983101,
+                "y": 465.754978413104
+            },
+            "data": {
+                "label": "Victum User",
+                "sequence": "0",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 176,
+                "height": 76
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.2111806389572204",
+            "type": "attackSelectorNode",
+            "position": {
+                "x": -272.67203028053564,
+                "y": 1119.8231293204587
+            },
+            "data": {
+                "label": "PowerShell",
+                "sequence": "6",
+                "user_properties": [],
+                "d3f_class": "d3f:T1086"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 208,
+                "height": 99
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 208,
+            "height": 99
+        },
+        {
+            "id": "0.5307585939533781",
+            "type": "noteNode",
+            "position": {
+                "x": 558.817979386388,
+                "y": -327.8241433492067
+            },
+            "data": {
+                "label": "D3FEND Execution Chain",
+                "sequence": "0",
+                "user_properties": [
+                    [
+                        "rdfs:comment",
+                        "The artifact execution chain\ndescribes all the artifacts which\nare involved in a scenario and\nthe sequence of their involvement.\n\n\n"
+                    ]
+                ]
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 195,
+                "height": 137
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.8210470873059882",
+            "type": "noteNode",
+            "position": {
+                "x": 924.5530591886134,
+                "y": -195.67750442617532
+            },
+            "data": {
+                "label": "Note on Events",
+                "sequence": "0",
+                "user_properties": [
+                    [
+                        "rdfs:comment",
+                        "A parallel set of events are required\nto depict the full set of things available\nto monitor as the attack occurs. This\ninitial diagram is kept simple and excludes\nthat event chain, future examples will\ndemonstrate this concept.\n"
+                    ]
+                ]
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 236,
+                "height": 115
+            },
+            "selected": false,
+            "width": 191,
+            "height": 115,
+            "dragging": false
+        }
+    ],
+    "edges": [
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "contains"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.6071601385874087",
+            "sourceHandle": "source",
+            "target": "0.42705486882231847",
+            "targetHandle": "target",
+            "id": "xy-edge__0.6071601385874087source-0.42705486882231847target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "sends"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.4413793232667994",
+            "sourceHandle": "source",
+            "target": "0.6071601385874087",
+            "targetHandle": "target",
+            "id": "xy-edge__0.4413793232667994source-0.6071601385874087target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "initiates",
+                "d3f_property": "d3f:initiates"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.581653696636286",
+            "sourceHandle": "source",
+            "target": "0.4413793232667994",
+            "targetHandle": "target",
+            "id": "xy-edge__0.581653696636286source-0.4413793232667994target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "implemented-by",
+                "d3f_property": "implemented-by"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.4798872031112791",
+            "sourceHandle": "source",
+            "target": "0.13256944195839404",
+            "targetHandle": "target",
+            "id": "xy-edge__0.4798872031112791source-0.13256944195839404target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "precedes"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.4413793232667994",
+            "sourceHandle": "source",
+            "target": "0.4798872031112791",
+            "targetHandle": "target",
+            "id": "xy-edge__0.4413793232667994source-0.4798872031112791target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "contains"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.10426293338922998",
+            "sourceHandle": "source",
+            "target": "0.6071601385874087",
+            "targetHandle": "target",
+            "id": "xy-edge__0.10426293338922998source-0.6071601385874087target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "executes"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.13256944195839404",
+            "sourceHandle": "source",
+            "target": "0.7792835143423777",
+            "targetHandle": "target",
+            "id": "xy-edge__0.13256944195839404source-0.7792835143423777target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "invokes"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.7792835143423777",
+            "sourceHandle": "source",
+            "target": "0.25835674899524097",
+            "targetHandle": "target",
+            "id": "xy-edge__0.7792835143423777source-0.25835674899524097target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "creates"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.25835674899524097",
+            "sourceHandle": "source",
+            "target": "0.04249325034853346",
+            "targetHandle": "target",
+            "id": "xy-edge__0.25835674899524097source-0.04249325034853346target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "creates"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.25835674899524097",
+            "sourceHandle": "source",
+            "target": "0.3108464738831057",
+            "targetHandle": "target",
+            "id": "xy-edge__0.25835674899524097source-0.3108464738831057target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "downloads"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.3108464738831057",
+            "sourceHandle": "source",
+            "target": "0.552059671457854",
+            "targetHandle": "target",
+            "id": "xy-edge__0.3108464738831057source-0.552059671457854target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "contains"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.2898381946203664",
+            "sourceHandle": "source",
+            "target": "0.552059671457854",
+            "targetHandle": "target",
+            "id": "xy-edge__0.2898381946203664source-0.552059671457854target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "contains"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.7535326980747047",
+            "sourceHandle": "source",
+            "target": "0.13256944195839404",
+            "targetHandle": "target",
+            "id": "xy-edge__0.7535326980747047source-0.13256944195839404target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "contains"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.42705486882231847",
+            "sourceHandle": "source",
+            "target": "0.7535326980747047",
+            "targetHandle": "target",
+            "id": "xy-edge__0.42705486882231847source-0.7535326980747047target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "implemented-by",
+                "d3f_property": "implemented-by"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.3294135325329819",
+            "sourceHandle": "source",
+            "target": "0.13256944195839404",
+            "targetHandle": "target",
+            "id": "xy-edge__0.3294135325329819source-0.13256944195839404target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "implemented-by",
+                "d3f_property": "implemented-by"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.9674498279207843",
+            "sourceHandle": "source",
+            "target": "0.13256944195839404",
+            "targetHandle": "target",
+            "id": "xy-edge__0.9674498279207843source-0.13256944195839404target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "invokes"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.3108464738831057",
+            "sourceHandle": "source",
+            "target": "0.21872006297325297",
+            "targetHandle": "target",
+            "id": "xy-edge__0.3108464738831057source-0.21872006297325297target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "invokes"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.21872006297325297",
+            "sourceHandle": "source",
+            "target": "0.03979030054819055",
+            "targetHandle": "target",
+            "id": "xy-edge__0.21872006297325297source-0.03979030054819055target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "creates",
+                "d3f_property": "d3f:creates"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.03979030054819055",
+            "sourceHandle": "source",
+            "target": "0.9366371466114469",
+            "targetHandle": "target",
+            "id": "xy-edge__0.03979030054819055source-0.9366371466114469target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "detects"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.6553811899665475",
+            "sourceHandle": "source",
+            "target": "0.9366371466114469",
+            "targetHandle": "target",
+            "id": "xy-edge__0.6553811899665475source-0.9366371466114469target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "analyzes",
+                "d3f_property": "d3f:analyzes"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.5848797624184087",
+            "sourceHandle": "source",
+            "target": "0.2898381946203664",
+            "targetHandle": "target",
+            "id": "xy-edge__0.5848797624184087source-0.2898381946203664target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "blocks"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.9621202021427397",
+            "sourceHandle": "source",
+            "target": "0.3108464738831057",
+            "targetHandle": "target",
+            "id": "xy-edge__0.9621202021427397source-0.3108464738831057target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "disables",
+                "d3f_property": "disables"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.30898977256836024",
+            "sourceHandle": "source",
+            "target": "0.7792835143423777",
+            "targetHandle": "target",
+            "id": "xy-edge__0.30898977256836024source-0.7792835143423777target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "implemented-by",
+                "d3f_property": "implemented-by"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.6835359685533496",
+            "sourceHandle": "source",
+            "target": "0.25835674899524097",
+            "targetHandle": "target",
+            "id": "xy-edge__0.6835359685533496source-0.25835674899524097target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "implemented-by",
+                "d3f_property": "implemented-by"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.34778388263272275",
+            "sourceHandle": "source",
+            "target": "0.3108464738831057",
+            "targetHandle": "target",
+            "id": "xy-edge__0.34778388263272275source-0.3108464738831057target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "creates"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.9366371466114469",
+            "sourceHandle": "source",
+            "target": "0.2898381946203664-copy0.13536047675435314",
+            "targetHandle": "target",
+            "id": "xy-edge__0.9366371466114469source-0.2898381946203664-copy0.13536047675435314target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "implemented-by",
+                "d3f_property": "implemented-by"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.921380612603658",
+            "sourceHandle": "source",
+            "target": "0.3108464738831057",
+            "targetHandle": "target",
+            "id": "xy-edge__0.921380612603658source-0.3108464738831057target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "blocks"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.4032013612667408",
+            "sourceHandle": "source",
+            "target": "0.42705486882231847",
+            "targetHandle": "target",
+            "id": "xy-edge__0.4032013612667408source-0.42705486882231847target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "blocks"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.4032013612667408",
+            "sourceHandle": "source",
+            "target": "0.7535326980747047",
+            "targetHandle": "target",
+            "id": "xy-edge__0.4032013612667408source-0.7535326980747047target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "blocks"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.4032013612667408",
+            "sourceHandle": "source",
+            "target": "0.13256944195839404",
+            "targetHandle": "target",
+            "id": "xy-edge__0.4032013612667408source-0.13256944195839404target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "implemented-by",
+                "d3f_property": "implemented-by"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.7984230369581443",
+            "sourceHandle": "source",
+            "target": "0.9366371466114469",
+            "targetHandle": "target",
+            "id": "xy-edge__0.7984230369581443source-0.9366371466114469target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "analyzes"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.8731411193589528",
+            "sourceHandle": "source",
+            "target": "0.42705486882231847",
+            "targetHandle": "target",
+            "id": "xy-edge__0.8731411193589528source-0.42705486882231847target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "consider",
+                "d3f_property": "consider"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.7716786725845816",
+            "sourceHandle": "source",
+            "target": "0.8731411193589528",
+            "targetHandle": "target",
+            "id": "xy-edge__0.7716786725845816source-0.8731411193589528target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "consider",
+                "d3f_property": "consider"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.7716786725845816",
+            "sourceHandle": "source",
+            "target": "0.4032013612667408",
+            "targetHandle": "target",
+            "id": "xy-edge__0.7716786725845816source-0.4032013612667408target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": ":deceives",
+                "d3f_property": ":deceives"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.04249325034853346",
+            "sourceHandle": "source",
+            "target": "0.6074354245521373",
+            "targetHandle": "target",
+            "id": "xy-edge__0.04249325034853346source-0.6074354245521373target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "precedes",
+                "d3f_property": "precedes"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.4798872031112791",
+            "sourceHandle": "source",
+            "target": "0.3294135325329819",
+            "targetHandle": "target",
+            "id": "xy-edge__0.4798872031112791source-0.3294135325329819target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "precedes",
+                "d3f_property": "precedes"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.3294135325329819",
+            "sourceHandle": "source",
+            "target": "0.9674498279207843",
+            "targetHandle": "target",
+            "id": "xy-edge__0.3294135325329819source-0.9674498279207843target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "precedes",
+                "d3f_property": "precedes"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.9674498279207843",
+            "sourceHandle": "source",
+            "target": "0.6835359685533496",
+            "targetHandle": "target",
+            "id": "xy-edge__0.9674498279207843source-0.6835359685533496target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "precedes",
+                "d3f_property": "precedes"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.6835359685533496",
+            "sourceHandle": "source",
+            "target": "0.34778388263272275",
+            "targetHandle": "target",
+            "id": "xy-edge__0.6835359685533496source-0.34778388263272275target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "precedes",
+                "d3f_property": "precedes"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.921380612603658",
+            "sourceHandle": "source",
+            "target": "0.7984230369581443",
+            "targetHandle": "target",
+            "id": "xy-edge__0.921380612603658source-0.7984230369581443target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "precedes",
+                "d3f_property": "precedes"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.34778388263272275",
+            "sourceHandle": "source",
+            "target": "0.2111806389572204",
+            "targetHandle": "target",
+            "id": "xy-edge__0.34778388263272275source-0.2111806389572204target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "precedes",
+                "d3f_property": "precedes"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.2111806389572204",
+            "sourceHandle": "source",
+            "target": "0.921380612603658",
+            "targetHandle": "target",
+            "id": "xy-edge__0.2111806389572204source-0.921380612603658target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "implemented-by",
+                "d3f_property": "implemented-by"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.2111806389572204",
+            "sourceHandle": "source",
+            "target": "0.03979030054819055",
+            "targetHandle": "target",
+            "id": "xy-edge__0.2111806389572204source-0.03979030054819055target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": ":has-note",
+                "d3f_property": ":has-note"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.5307585939533781",
+            "sourceHandle": "source",
+            "target": "0.10426293338922998",
+            "targetHandle": "target",
+            "id": "xy-edge__0.5307585939533781source-0.10426293338922998target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "analyzes",
+                "d3f_property": "d3f:analyzes"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.5848797624184087",
+            "sourceHandle": "source",
+            "target": "0.2898381946203664-copy0.13536047675435314",
+            "targetHandle": "target",
+            "id": "xy-edge__0.5848797624184087source-0.2898381946203664-copy0.13536047675435314target",
+            "selected": false
+        }
+    ]
+}

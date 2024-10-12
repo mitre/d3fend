@@ -1,0 +1,645 @@
+{
+    "meta": {
+        "title": "Disk Formatting D3FEND Extension Example",
+        "authors": [
+            "Simone Kraus",
+            "Peter Kaloroumakis"
+        ],
+        "orgs": [
+            "Orange Cyber Defense",
+            "MITRE Corporation"
+        ],
+        "description": "",
+        "article": "",
+        "d3fend_version": "0.16.0",
+        "cad_schema_version": 1,
+        "published_date": "2024-10-08T00:23:47.751Z",
+        "references": [
+            ""
+        ],
+        "settings": {}
+    },
+    "nodes": [
+        {
+            "id": "0.7699520307088017",
+            "type": "countermeasureSelectorNode",
+            "position": {
+                "x": 370.3562019022501,
+                "y": 257.520663233301
+            },
+            "data": {
+                "label": "Object Eviction",
+                "sequence": "0",
+                "d3f_class": "d3f:ObjectEviction",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 176,
+                "height": 110
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.049622708963256046",
+            "type": "countermeasureSelectorNode",
+            "position": {
+                "x": 426.8511443276545,
+                "y": 9.054778544272665
+            },
+            "data": {
+                "label": " Disk Formatting",
+                "sequence": "0",
+                "d3f_class": ":DiskFormatting",
+                "user_properties": [
+                    [
+                        "definition",
+                        "The process of preparing a data storage device such as a hard disk drive, solid-state drive, floppy disk, memory card or USB flash drive for initial use."
+                    ],
+                    [
+                        "rdfs:definedBy",
+                        "https://dbpedia.org/page/Disk_formatting"
+                    ]
+                ]
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 309,
+                "height": 137
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 237,
+            "height": 137
+        },
+        {
+            "id": "0.5362248052375376",
+            "type": "countermeasureSelectorNode",
+            "position": {
+                "x": 831.9850493572372,
+                "y": 28.13848513950984
+            },
+            "data": {
+                "label": "Disk Partitioning",
+                "sequence": "0",
+                "d3f_class": ":DiskPartitioning",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 184,
+                "height": 93
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 184,
+            "height": 93
+        },
+        {
+            "id": "0.09389462338428678",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 1121.0259972506567,
+                "y": 154.31540998547388
+            },
+            "data": {
+                "label": "Partition Table",
+                "sequence": "0",
+                "d3f_class": "d3f:PartitionTable",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 176,
+                "height": 99
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.2937303559851123",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 1436.8265401840295,
+                "y": 40.399017170206776
+            },
+            "data": {
+                "label": "Boot Record",
+                "sequence": "0",
+                "d3f_class": "d3f:BootRecord",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 176,
+                "height": 99
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.9987487397579196",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 799.5993941626014,
+                "y": 357.5497927103316
+            },
+            "data": {
+                "label": "Secondary Storage",
+                "sequence": "0",
+                "d3f_class": "d3f:SecondaryStorage",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 176,
+                "height": 99
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.6149196607789622",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 1197.0207689800052,
+                "y": 366.2586492278352
+            },
+            "data": {
+                "label": "File System",
+                "sequence": "0",
+                "d3f_class": "d3f:FileSystem",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 176,
+                "height": 78
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 176,
+            "height": 78
+        },
+        {
+            "id": "0.025743875674319017",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 900.5073910661729,
+                "y": 517.4348046917377
+            },
+            "data": {
+                "label": "Directory",
+                "sequence": "0",
+                "d3f_class": "d3f:Directory",
+                "user_properties": []
+            },
+            "measured": {
+                "width": 176,
+                "height": 99
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.6869081896378731",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 1100.5073910661729,
+                "y": 517.4348046917377
+            },
+            "data": {
+                "label": "File",
+                "sequence": "0",
+                "d3f_class": "d3f:File",
+                "user_properties": []
+            },
+            "measured": {
+                "width": 176,
+                "height": 99
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.004501008421587072",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 1300.5073910661729,
+                "y": 517.4348046917377
+            },
+            "data": {
+                "label": "File System Link",
+                "sequence": "0",
+                "d3f_class": "d3f:FileSystemLink",
+                "user_properties": []
+            },
+            "measured": {
+                "width": 176,
+                "height": 99
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.7846273470918882",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 1500.5073910661729,
+                "y": 517.4348046917377
+            },
+            "data": {
+                "label": "File System Metadata",
+                "sequence": "0",
+                "d3f_class": "d3f:FileSystemMetadata",
+                "user_properties": []
+            },
+            "measured": {
+                "width": 176,
+                "height": 99
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.7546456441973028",
+            "type": "attackSelectorNode",
+            "position": {
+                "x": 478.26399706062807,
+                "y": 496.89784372063673
+            },
+            "data": {
+                "label": "Disk Structure Wipe",
+                "sequence": "0",
+                "d3f_class": "d3f:T1561.002",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 176,
+                "height": 123
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.3525054002262139",
+            "type": "countermeasureSelectorNode",
+            "position": {
+                "x": 788.5264189211426,
+                "y": 190.0899934270509
+            },
+            "data": {
+                "label": "Disk Erasure",
+                "sequence": "0",
+                "d3f_class": ":DiskErasure",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 176,
+                "height": 110
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.4057756330860133",
+            "type": "noteNode",
+            "position": {
+                "x": -81.38886470035175,
+                "y": 41.290556068335945
+            },
+            "data": {
+                "label": "Proposed Additions to D3FEND",
+                "sequence": "0",
+                "user_properties": [
+                    [
+                        "rdfs:comment",
+                        "This CAD diagram shows you how to propose and submit new classes\nand properties to the upstream D3FEND ontology, accessible here:\n\n    https://github.com/d3fend/d3fend-ontology\n\n\nThis syntax:\n\n    :DiskFormatting\n\nindicates that we are adding a new class\nto the ontology. Note the colon character and lack of spaces. Also, this proposal\nfits :DiskFormatting into the existing ontology under d3f:ObjectEviction.\n\n\nThus, the Node will be interpreted as a class instead of an instance.\n\nThe same works for properties as well, note the\n:erases property.\n\n\n\nYou can click \"Save As\" > \"D3FEND Extension\" and submit the file to the\nD3FEND team for consideration.\n\n"
+                    ]
+                ]
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 454,
+                "height": 384
+            },
+            "selected": false,
+            "width": 454,
+            "height": 384,
+            "dragging": false
+        },
+        {
+            "id": "0.43697408665424",
+            "type": "countermeasureSelectorNode",
+            "position": {
+                "x": 172.99326012884458,
+                "y": 485.67940046736237
+            },
+            "data": {
+                "label": "d3f:DefensiveTechnique",
+                "sequence": "0",
+                "user_properties": [],
+                "d3f_class": "d3f:DefensiveTechnique"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 176,
+                "height": 110
+            },
+            "selected": false,
+            "dragging": false
+        }
+    ],
+    "edges": [
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "rdfs:subClassOf",
+                "d3f_class": "rdfs:subClassOf"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.049622708963256046",
+            "sourceHandle": "source",
+            "target": "0.7699520307088017",
+            "targetHandle": "target",
+            "id": "xy-edge__0.049622708963256046source-0.7699520307088017target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "creates",
+                "d3f_class": "d3f:creates"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.5362248052375376",
+            "sourceHandle": "source",
+            "target": "0.09389462338428678",
+            "targetHandle": "target",
+            "id": "xy-edge__0.source-0.09389462338428678artLefarget",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "may-contain",
+                "d3f_class": "may-contain"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.09389462338428678",
+            "sourceHandle": "source",
+            "target": "0.2937303559851123",
+            "targetHandle": "target",
+            "id": "xy-edge__0.source-0.2937303559851123artLeftTarget",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "contains",
+                "d3f_class": "d3f:contains"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.9987487397579196",
+            "sourceHandle": "source",
+            "target": "0.09389462338428678",
+            "targetHandle": "target",
+            "id": "xy-edge__0.source-0.09389462338428678artL",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "contains",
+                "d3f_class": "d3f:contains"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.9987487397579196",
+            "sourceHandle": "source",
+            "target": "0.6149196607789622",
+            "targetHandle": "target",
+            "id": "xy-edge__0.source-0.6149196607789622artLeftTarget",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": ":wipes",
+                "d3f_class": ":wipes",
+                "d3f_property": ":wipes"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.7546456441973028",
+            "sourceHandle": "source",
+            "target": "0.9987487397579196",
+            "targetHandle": "target",
+            "id": "xy-edge__0.source-0.9987487397579196artLeftTarget",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "contains"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.6149196607789622",
+            "sourceHandle": "source",
+            "target": "0.004501008421587072",
+            "targetHandle": "target",
+            "id": "xy-edge__0.6149196607789622source-0.004501008421587072target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "contains"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.6149196607789622",
+            "sourceHandle": "source",
+            "target": "0.7846273470918882",
+            "targetHandle": "target",
+            "id": "xy-edge__0.6149196607789622source-0.7846273470918882target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "contains"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.6149196607789622",
+            "sourceHandle": "source",
+            "target": "0.6869081896378731",
+            "targetHandle": "target",
+            "id": "xy-edge__0.6149196607789622source-0.6869081896378731target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "contains",
+                "d3f_class": "d3f:contains"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.6149196607789622",
+            "sourceHandle": "source",
+            "target": "0.025743875674319017",
+            "targetHandle": "target",
+            "id": "xy-edge__0.6149196607789622source-0.025743875674319017target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": ":erases",
+                "d3f_class": ":erases"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.3525054002262139",
+            "sourceHandle": "source",
+            "target": "0.9987487397579196",
+            "targetHandle": "target",
+            "id": "xy-edge__0.source-0.9987487397579196defenseRightTarget",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "rdfs:subClassOf",
+                "d3f_class": "rdfs:subClassOf"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.3525054002262139",
+            "sourceHandle": "source",
+            "target": "0.049622708963256046",
+            "targetHandle": "target",
+            "id": "xy-edge__0.3525054002262139source-0.049622708963256046target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "rdfs:subClassOf",
+                "d3f_class": "rdfs:subClassOf"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.5362248052375376",
+            "sourceHandle": "source",
+            "target": "0.049622708963256046",
+            "targetHandle": "target",
+            "id": "xy-edge__0.5362248052375376source-0.049622708963256046target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "rdfs:subClassOf",
+                "d3f_property": "rdfs:subClassOf"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.7699520307088017",
+            "sourceHandle": "source",
+            "target": "0.43697408665424",
+            "targetHandle": "target",
+            "id": "xy-edge__0.7699520307088017source-0.43697408665424target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "has-note",
+                "d3f_property": "has-note"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.4057756330860133",
+            "sourceHandle": "source",
+            "target": "0.049622708963256046",
+            "targetHandle": "target",
+            "id": "xy-edge__0.4057756330860133source-0.049622708963256046target",
+            "selected": false
+        }
+    ]
+}

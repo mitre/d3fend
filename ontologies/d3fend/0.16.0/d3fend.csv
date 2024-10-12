@@ -171,14 +171,21 @@ D3-SHN,Deceive,,Standalone Honeynet,,An environment created for the purpose of a
 D3-IHN,Deceive,,Integrated Honeynet,,The practice of setting decoys in a production environment to entice interaction from attackers.
 D3-CHN,Deceive,,Connected Honeynet,,"A decoy service, system, or environment, that is connected to the enterprise network, and simulates or emulates certain functionality to the network, without exposing full access to a production system."
 D3-PE,Evict,Process Eviction,,,
+D3-ST,Evict,,Session Termination,,Forcefully end all active sessions associated with compromised accounts or devices.
 D3-PT,Evict,,Process Termination,,Terminating a running application process on a computer system.
 D3-PS,Evict,,Process Suspension,,Suspending a running process on a computer system.
 D3-HS,Evict,,Host Shutdown,,Initiating a host's shutdown sequence to terminate all running processes.
 D3-HR,Evict,,,Host Reboot,Initiating a host's reboot sequence to terminate all running processes.
-D3-FEV,Evict,File Eviction,,,
-D3-FR,Evict,,File Removal,,The file removal technique deletes malicious artifacts or programs from a computer system.
+D3-OE,Evict,Object Eviction,,,
+D3-RKD,Evict,,Registry Key Deletion,,Delete a registry key.
+D3-FEV,Evict,,File Eviction,,File eviction techniques delete files from system storage.
 D3-ER,Evict,,,Email Removal,The email removal technique deletes email files from system storage.
+D3-DRT,Evict,,Domain Registration Takedown,,The process of performing a takedown of the attacker's domain registration infrastructure.
+D3-DKF,Evict,,Disk Formatting,,"Disk Formatting is the process of preparing a data storage device, such as a hard drive, solid-state drive, or USB flash drive, for initial use."
+D3-DKP,Evict,,,Disk Partitioning,"Disk Partitioning is the process of dividing a disk into multiple distinct sections, known as partitions."
+D3-DKE,Evict,,,Disk Erasure,Disk Erasure is the process of securely deleting all data on a disk to ensure that it cannot be recovered by any means.
+D3-DNSCE,Evict,,DNS Cache Eviction,,Flushing DNS to clear any IP addresses or other DNS records from the cache.
 D3-CE,Evict,Credential Eviction,,,
-D3-CR,Evict,,Credential Revoking,,Deleting a set of credentials permanently to prevent them from being used to authenticate.
+D3-CR,Evict,,Credential Revocation,,Deleting a set of credentials permanently to prevent them from being used to authenticate.
 D3-ANCI,Evict,,Authentication Cache Invalidation,,Removing tokens or credentials from an authentication cache to prevent further user associated account accesses.
 D3-AL,Evict,,Account Locking,,The process of temporarily disabling user accounts on a system or domain.

@@ -1,0 +1,217 @@
+{
+    "nodes": [
+        {
+            "id": "0.34869333035814676",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 713,
+                "y": 259.86669921875
+            },
+            "data": {
+                "label": "d3fend.ttl",
+                "sequence": "0",
+                "d3f_class": "d3f:TurtleFile"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 186,
+                "height": 68
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.9999917414654342",
+            "type": "attackSelectorNode",
+            "position": {
+                "x": 472,
+                "y": 87.050048828125
+            },
+            "data": {
+                "label": "d3f:T1087",
+                "sequence": "1"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 186,
+                "height": 52
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.006027725739969569",
+            "type": "countermeasureSelectorNode",
+            "position": {
+                "x": 1025.5,
+                "y": 80.050048828125
+            },
+            "data": {
+                "label": "Deploy Ontology Honeynet",
+                "sequence": "0",
+                "d3f_class": "d3f:StandaloneHoneynet"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 186,
+                "height": 67
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.2891461522077302",
+            "type": "countermeasureSelectorNode",
+            "position": {
+                "x": 1039,
+                "y": 257.050048828125
+            },
+            "data": {
+                "label": "Deploy fake d3fend.ttl",
+                "sequence": "0",
+                "d3f_class": "d3f:DecoyFile"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 186,
+                "height": 67
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.5398668764678749",
+            "type": "artifactSelectorNode",
+            "position": {
+                "x": 719.5,
+                "y": 75.550048828125
+            },
+            "data": {
+                "label": "d3fend honeynet",
+                "sequence": "0",
+                "d3f_class": "d3f:Network"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 186,
+                "height": 68
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.4926824491298447",
+            "type": "conditionDefinitionNode",
+            "position": {
+                "x": 391,
+                "y": 251.050048828125
+            },
+            "data": {
+                "label": "Note: This is Discovery",
+                "sequence": "0"
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 186,
+                "height": 50
+            },
+            "selected": false,
+            "dragging": false
+        }
+    ],
+    "edges": [
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "d3f:discovers"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.9999917414654342",
+            "sourceHandle": "attackRightSource",
+            "target": "0.34869333035814676",
+            "targetHandle": "attackLeftTarget",
+            "id": "xy-edge__0.9999917414654342attackRightSource-0.34869333035814676attackLeftTarget",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "d3f:spoofs"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.2891461522077302",
+            "sourceHandle": "defenseLeftSource",
+            "target": "0.34869333035814676",
+            "targetHandle": "defenseRightTarget",
+            "id": "xy-edge__0.2891461522077302defenseLeftSource-0.34869333035814676defenseRightTarget",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "d3f:spoofs"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.006027725739969569",
+            "sourceHandle": "defenseLeftSource",
+            "target": "0.5398668764678749",
+            "targetHandle": "defenseRightTarget",
+            "id": "xy-edge__0.006027725739969569defenseLeftSource-0.5398668764678749defenseRightTarget",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "d3f:contains"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.5398668764678749",
+            "sourceHandle": "artBottomSource",
+            "target": "0.34869333035814676",
+            "targetHandle": "artTopTarget",
+            "id": "xy-edge__0.5398668764678749artBottomSource-0.34869333035814676artTopTarget",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "note"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.9999917414654342",
+            "sourceHandle": "attackBottomSource",
+            "target": "0.4926824491298447",
+            "targetHandle": "artTopTarget",
+            "id": "xy-edge__0.9999917414654342attackBottomSource-0.4926824491298447artTopTarget",
+            "selected": false
+        }
+    ]
+}

@@ -1,4 +1,22 @@
 {
+    "meta": {
+        "title": " T1554 Bushwalk Malware CAD Model Demo",
+        "authors": [
+            "Peter Kaloroumakis"
+        ],
+        "orgs": [
+            "MITRE Corporation"
+        ],
+        "description": "Simple defense in depth demo",
+        "article": "",
+        "d3fend_version": "0.16.0",
+        "cad_schema_version": 1,
+        "published_date": "2024-10-08T00:23:02.617Z",
+        "references": [
+            "https://attack.mitre.org/software/S1118/"
+        ],
+        "settings": {}
+    },
     "nodes": [
         {
             "id": "0.28745244020819394",
@@ -9,15 +27,17 @@
             },
             "data": {
                 "label": "OS API Write File",
-                "sequence": "0"
+                "sequence": "0",
+                "d3f_class": "d3f:OSAPIWriteFile",
+                "user_properties": []
             },
             "origin": [
                 0.5,
                 0
             ],
             "measured": {
-                "width": 187,
-                "height": 69
+                "width": 176,
+                "height": 99
             },
             "selected": false,
             "dragging": false
@@ -30,16 +50,18 @@
                 "y": -474.58176656760077
             },
             "data": {
-                "label": "Write File",
-                "sequence": "0"
+                "label": "Write File Syscall",
+                "sequence": "0",
+                "d3f_class": "d3f:WriteFile",
+                "user_properties": []
             },
             "origin": [
                 0.5,
                 0
             ],
             "measured": {
-                "width": 187,
-                "height": 69
+                "width": 176,
+                "height": 99
             },
             "selected": false,
             "dragging": false
@@ -52,38 +74,18 @@
                 "y": -286.12331949494006
             },
             "data": {
-                "label": "Malware BUSHWALK - S1118",
-                "sequence": "0"
+                "label": "BUSHWALK Malware",
+                "sequence": "0",
+                "d3f_class": "d3f:ExecutableBinary",
+                "user_properties": []
             },
             "origin": [
                 0.5,
                 0
             ],
             "measured": {
-                "width": 187,
-                "height": 69
-            },
-            "selected": false,
-            "dragging": false
-        },
-        {
-            "id": "0.12193705870339033",
-            "type": "eventNode",
-            "position": {
-                "x": 518.4714092592948,
-                "y": -594.8611042634378
-            },
-            "data": {
-                "label": "Create File Event",
-                "sequence": "0"
-            },
-            "origin": [
-                0.5,
-                0
-            ],
-            "measured": {
-                "width": 187,
-                "height": 66
+                "width": 176,
+                "height": 99
             },
             "selected": false,
             "dragging": false
@@ -96,16 +98,18 @@
                 "y": -286.6295900554935
             },
             "data": {
-                "label": "T1554",
-                "sequence": "0"
+                "label": "Compromise Host Software Binary",
+                "sequence": "0",
+                "user_properties": [],
+                "d3f_class": "d3f:T1554"
             },
             "origin": [
                 0.5,
                 0
             ],
             "measured": {
-                "width": 187,
-                "height": 53
+                "width": 176,
+                "height": 123
             },
             "selected": false,
             "dragging": false
@@ -114,20 +118,21 @@
             "id": "0.026668828190339",
             "type": "agentSelectorNode",
             "position": {
-                "x": -489.37052953290413,
-                "y": -570.6508482305883
+                "x": -453.5498350435255,
+                "y": -585.2030053668983
             },
             "data": {
                 "label": "attacker",
-                "sequence": "0"
+                "sequence": "0",
+                "user_properties": []
             },
             "origin": [
                 0.5,
                 0
             ],
             "measured": {
-                "width": 187,
-                "height": 51
+                "width": 176,
+                "height": 76
             },
             "selected": false,
             "dragging": false
@@ -140,8 +145,10 @@
                 "y": -475.6407074238169
             },
             "data": {
-                "label": "d3f:OperatingSystemExecutableFile",
-                "sequence": "0"
+                "label": "OS Executable File",
+                "sequence": "0",
+                "d3f_class": "d3f:OperatingSystemExecutableFile",
+                "user_properties": []
             },
             "origin": [
                 0.5,
@@ -149,7 +156,7 @@
             ],
             "measured": {
                 "width": 187,
-                "height": 69
+                "height": 99
             },
             "selected": false,
             "dragging": false
@@ -162,16 +169,18 @@
                 "y": -126.22264306364235
             },
             "data": {
-                "label": "D3-EAL",
-                "sequence": "0"
+                "label": "Executable Allowlisting",
+                "sequence": "0",
+                "d3f_class": "d3f:ExecutableAllowlisting",
+                "user_properties": []
             },
             "origin": [
                 0.5,
                 0
             ],
             "measured": {
-                "width": 187,
-                "height": 68
+                "width": 176,
+                "height": 110
             },
             "selected": false,
             "dragging": false
@@ -184,16 +193,18 @@
                 "y": -701.9008044548227
             },
             "data": {
-                "label": "d3f:SystemCallAnalysis",
-                "sequence": "1"
+                "label": "System Call Analysis",
+                "sequence": "2",
+                "d3f_class": "d3f:SystemCallAnalysis",
+                "user_properties": []
             },
             "origin": [
                 0.5,
                 0
             ],
             "measured": {
-                "width": 187,
-                "height": 68
+                "width": 176,
+                "height": 110
             },
             "selected": false,
             "dragging": false
@@ -206,16 +217,18 @@
                 "y": -697.3687809996632
             },
             "data": {
-                "label": "d3f:FileAnalysis",
-                "sequence": "2"
+                "label": "File Analysis",
+                "sequence": "3",
+                "d3f_class": "d3f:FileAnalysis",
+                "user_properties": []
             },
             "origin": [
                 0.5,
                 0
             ],
             "measured": {
-                "width": 187,
-                "height": 68
+                "width": 176,
+                "height": 110
             },
             "selected": false,
             "dragging": false
@@ -228,16 +241,70 @@
                 "y": -700.4538274042884
             },
             "data": {
-                "label": "d3f:FileIntegrityMonitoring",
-                "sequence": "3"
+                "label": "File Integrity Monitoring",
+                "sequence": "4",
+                "d3f_class": "d3f:FileIntegrityMonitoring",
+                "user_properties": []
             },
             "origin": [
                 0.5,
                 0
             ],
             "measured": {
-                "width": 187,
-                "height": 68
+                "width": 176,
+                "height": 110
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.6395594717773364",
+            "type": "countermeasureSelectorNode",
+            "position": {
+                "x": 304.9250080885881,
+                "y": -276.7242378961826
+            },
+            "data": {
+                "label": "System Call Filtering",
+                "sequence": "1",
+                "d3f_class": "d3f:SystemCallFiltering",
+                "user_properties": []
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 176,
+                "height": 110
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.25308669626129376",
+            "type": "noteNode",
+            "position": {
+                "x": 982.6795799010847,
+                "y": -289.56055137678044
+            },
+            "data": {
+                "label": "Note on File Integrity Monitoring ",
+                "sequence": "0",
+                "user_properties": [
+                    [
+                        "rdfs:comment",
+                        "This countermeasure only applies because\nthis is an operating system file, highlighting\nthe need for deep taxonomies.\n\nIf this were a user file, you could not apply\nthis technique due to false positives.\n"
+                    ]
+                ]
+            },
+            "origin": [
+                0.5,
+                0
+            ],
+            "measured": {
+                "width": 240,
+                "height": 137
             },
             "selected": false,
             "dragging": false
@@ -247,31 +314,33 @@
         {
             "type": "editableEdge",
             "data": {
-                "label": "invokes"
+                "label": "invokes",
+                "d3f_property": "d3f:invokes"
             },
             "markerEnd": {
                 "type": "arrowclosed"
             },
             "source": "0.28745244020819394",
-            "sourceHandle": "artRightSource",
+            "sourceHandle": "source",
             "target": "0.9734359398205206",
-            "targetHandle": "vulnerabilityLeftTarget",
-            "id": "xy-edge__0.28745244020819394artRightSource-0.9734359398205206vulnerabilityLeftTarget",
+            "targetHandle": "target",
+            "id": "xy-edge__0.28745244020819394source-0.9734359398205206target",
             "selected": false
         },
         {
             "type": "editableEdge",
             "data": {
-                "label": "contains"
+                "label": "contains",
+                "d3f_property": "d3f:contains"
             },
             "markerEnd": {
                 "type": "arrowclosed"
             },
             "source": "0.28745244020819394",
-            "sourceHandle": "artBottomSource",
+            "sourceHandle": "source",
             "target": "0.2991290665885308",
-            "targetHandle": "artTopTarget",
-            "id": "xy-edge__0.28745244020819394artBottomSource-0.2991290665885308artTopTarget",
+            "targetHandle": "target",
+            "id": "xy-edge__0.28745244020819394source-0.2991290665885308target",
             "selected": false
         },
         {
@@ -283,25 +352,26 @@
                 "type": "arrowclosed"
             },
             "source": "0.09193859368571666",
-            "sourceHandle": "attackRightSource",
+            "sourceHandle": "source",
             "target": "0.2991290665885308",
-            "targetHandle": "attackLeftTarget",
-            "id": "xy-edge__0.09193859368571666attackRightSource-0.2991290665885308attackLeftTarget",
+            "targetHandle": "target",
+            "id": "xy-edge__0.09193859368571666source-0.2991290665885308target",
             "selected": false
         },
         {
             "type": "editableEdge",
             "data": {
-                "label": "executes"
+                "label": "executes",
+                "d3f_property": "d3f:executes"
             },
             "markerEnd": {
                 "type": "arrowclosed"
             },
             "source": "0.026668828190339",
-            "sourceHandle": "artBottomSource",
+            "sourceHandle": "source",
             "target": "0.09193859368571666",
-            "targetHandle": "attackTopTarget",
-            "id": "xy-edge__0.026668828190339artBottomSource-0.09193859368571666attackTopTarget",
+            "targetHandle": "target",
+            "id": "xy-edge__0.026668828190339source-0.09193859368571666target",
             "selected": false
         },
         {
@@ -313,10 +383,10 @@
                 "type": "arrowclosed"
             },
             "source": "0.9734359398205206",
-            "sourceHandle": "artRightSource",
+            "sourceHandle": "source",
             "target": "0.7438529946288932",
-            "targetHandle": "artLeftTarget",
-            "id": "xy-edge__0.9734359398205206artRightSource-0.7438529946288932artLeftTarget",
+            "targetHandle": "target",
+            "id": "xy-edge__0.9734359398205206source-0.7438529946288932target",
             "selected": false
         },
         {
@@ -328,10 +398,10 @@
                 "type": "arrowclosed"
             },
             "source": "0.2991290665885308",
-            "sourceHandle": "artBottomSource",
+            "sourceHandle": "source",
             "target": "0.8639284363107326",
-            "targetHandle": "defenseTopTarget",
-            "id": "xy-edge__0.2991290665885308artBottomSource-0.8639284363107326defenseTopTarget",
+            "targetHandle": "target",
+            "id": "xy-edge__0.2991290665885308source-0.8639284363107326target",
             "selected": false
         },
         {
@@ -343,85 +413,90 @@
                 "type": "arrowclosed"
             },
             "source": "0.026668828190339",
-            "sourceHandle": "artBottomSource",
+            "sourceHandle": "source",
             "target": "0.2991290665885308",
-            "targetHandle": "artTopTarget",
-            "id": "xy-edge__0.026668828190339artBottomSource-0.2991290665885308artTopTarget",
+            "targetHandle": "target",
+            "id": "xy-edge__0.026668828190339source-0.2991290665885308target",
             "selected": false
         },
         {
             "type": "editableEdge",
             "data": {
-                "label": "analyzes"
+                "label": "analyzes",
+                "d3f_property": "d3f:analyzes"
             },
             "markerEnd": {
                 "type": "arrowclosed"
             },
             "source": "0.1803005710496245",
-            "sourceHandle": "defenseBottomSource",
+            "sourceHandle": "source",
             "target": "0.9734359398205206",
-            "targetHandle": "artTopTarget",
-            "id": "xy-edge__0.1803005710496245defenseBottomSource-0.9734359398205206artTopTarget",
+            "targetHandle": "target",
+            "id": "xy-edge__0.1803005710496245source-0.9734359398205206target",
             "selected": false
         },
         {
             "type": "editableEdge",
             "data": {
-                "label": "monitors"
+                "label": "monitors",
+                "d3f_property": "d3f:monitors"
             },
             "markerEnd": {
                 "type": "arrowclosed"
             },
             "source": "0.3180850673915423",
-            "sourceHandle": "defenseBottomSource",
+            "sourceHandle": "source",
             "target": "0.7438529946288932",
-            "targetHandle": "artTopTarget",
-            "id": "xy-edge__0.3180850673915423defenseBottomSource-0.7438529946288932artTopTarget",
+            "targetHandle": "target",
+            "id": "xy-edge__0.3180850673915423source-0.7438529946288932target",
             "selected": false
         },
         {
             "type": "editableEdge",
             "data": {
-                "label": "monitors"
+                "label": "monitors",
+                "d3f_property": "d3f:monitors"
             },
             "markerEnd": {
                 "type": "arrowclosed"
             },
             "source": "0.3615545411229423",
-            "sourceHandle": "defenseBottomSource",
+            "sourceHandle": "source",
             "target": "0.7438529946288932",
-            "targetHandle": "artTopTarget",
-            "id": "xy-edge__0.3615545411229423defenseBottomSource-0.7438529946288932artTopTarget",
+            "targetHandle": "target",
+            "id": "xy-edge__0.3615545411229423source-0.7438529946288932target",
             "selected": false
         },
         {
             "type": "editableEdge",
             "data": {
-                "label": "event-initator"
+                "label": "filters",
+                "d3f_property": "d3f:filters"
             },
             "markerEnd": {
                 "type": "arrowclosed"
             },
-            "source": "0.12193705870339033",
-            "sourceHandle": "artBottomSource",
-            "target": "0.9734359398205206",
-            "targetHandle": "artTopTarget",
-            "id": "xy-edge__0.12193705870339033artBottomSource-0.9734359398205206artTopTarget",
+            "source": "0.9734359398205206",
+            "sourceHandle": "source",
+            "target": "0.6395594717773364",
+            "targetHandle": "target",
+            "id": "xy-edge__0.9734359398205206source-0.6395594717773364target",
             "selected": false
         },
         {
             "type": "editableEdge",
             "data": {
-                "label": "event-target"
+                "label": ":has-note",
+                "d3f_property": ":has-note"
             },
             "markerEnd": {
                 "type": "arrowclosed"
             },
-            "source": "0.12193705870339033",
-            "sourceHandle": "artBottomSource",
-            "target": "0.7438529946288932",
-            "targetHandle": "artTopTarget",
-            "id": "xy-edge__0.12193705870339033artBottomSource-0.7438529946288932artTopTarget",
+            "source": "0.3615545411229423",
+            "sourceHandle": "source",
+            "target": "0.25308669626129376",
+            "targetHandle": "target",
+            "id": "xy-edge__0.3615545411229423source-0.25308669626129376target",
             "selected": false
         }
     ]
