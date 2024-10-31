@@ -133,6 +133,8 @@ a {
   text-decoration: none;
 }
 
+button a { color: black;}
+
 a:hover {
   text-decoration: underline;
 }

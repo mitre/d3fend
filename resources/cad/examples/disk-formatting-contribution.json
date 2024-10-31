@@ -39,7 +39,7 @@
             ],
             "measured": {
                 "width": 176,
-                "height": 110
+                "height": 108
             },
             "selected": false,
             "dragging": false
@@ -48,8 +48,8 @@
             "id": "0.049622708963256046",
             "type": "countermeasureSelectorNode",
             "position": {
-                "x": 426.8511443276545,
-                "y": 9.054778544272665
+                "x": 470.4304356778989,
+                "y": -205.7791145619465
             },
             "data": {
                 "label": " Disk Formatting",
@@ -71,20 +71,20 @@
                 0
             ],
             "measured": {
-                "width": 309,
-                "height": 137
+                "width": 478,
+                "height": 213
             },
             "selected": false,
             "dragging": false,
-            "width": 237,
-            "height": 137
+            "width": 478,
+            "height": 213
         },
         {
             "id": "0.5362248052375376",
             "type": "countermeasureSelectorNode",
             "position": {
-                "x": 831.9850493572372,
-                "y": 28.13848513950984
+                "x": 914.7462682085893,
+                "y": 4.313285773211533
             },
             "data": {
                 "label": "Disk Partitioning",
@@ -124,7 +124,7 @@
             ],
             "measured": {
                 "width": 176,
-                "height": 99
+                "height": 97
             },
             "selected": false,
             "dragging": false
@@ -148,7 +148,7 @@
             ],
             "measured": {
                 "width": 176,
-                "height": 99
+                "height": 97
             },
             "selected": false,
             "dragging": false
@@ -172,7 +172,7 @@
             ],
             "measured": {
                 "width": 176,
-                "height": 99
+                "height": 97
             },
             "selected": false,
             "dragging": false
@@ -218,7 +218,7 @@
             },
             "measured": {
                 "width": 176,
-                "height": 99
+                "height": 97
             },
             "origin": [
                 0.5,
@@ -242,7 +242,7 @@
             },
             "measured": {
                 "width": 176,
-                "height": 99
+                "height": 97
             },
             "origin": [
                 0.5,
@@ -266,7 +266,7 @@
             },
             "measured": {
                 "width": 176,
-                "height": 99
+                "height": 97
             },
             "origin": [
                 0.5,
@@ -290,7 +290,7 @@
             },
             "measured": {
                 "width": 176,
-                "height": 99
+                "height": 97
             },
             "origin": [
                 0.5,
@@ -318,7 +318,7 @@
             ],
             "measured": {
                 "width": 176,
-                "height": 123
+                "height": 120
             },
             "selected": false,
             "dragging": false
@@ -342,7 +342,7 @@
             ],
             "measured": {
                 "width": 176,
-                "height": 110
+                "height": 108
             },
             "selected": false,
             "dragging": false
@@ -396,7 +396,7 @@
             ],
             "measured": {
                 "width": 176,
-                "height": 110
+                "height": 108
             },
             "selected": false,
             "dragging": false
