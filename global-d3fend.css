@@ -330,6 +330,10 @@ dt {
   flex: 0%;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .w-100 {
   width: 100%;
 }

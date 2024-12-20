@@ -26,21 +26,34 @@ D3-SYSVA,Model,,System Vulnerability Assessment,,"System vulnerability assessmen
 D3-SYSDM,Model,,System Dependency Mapping,,System dependency mapping identifies and models the dependencies of system components on each other to carry out their function.
 D3-SVCDM,Model,,Service Dependency Mapping,,Service dependency mapping determines the services on which each given service relies.
 D3-DEM,Model,,Data Exchange Mapping,,"Data exchange mapping identifies and models the organization's intended design for the flows of the data types, formats, and volumes between systems at the application layer."
+D3-SCH,Harden,Source Code Hardening,,,
+D3-VTV,Harden,,Variable Type Validation,,Ensuring that a variable has the correct type.
+D3-VI,Harden,,Variable Initialization,,Setting variables to a known value before use.
+D3-TL,Harden,,Trusted Library,,"A trusted library is a collection of pre-verified and secure code modules or components that are used within software applications to perform specific functions. These libraries are considered reliable and have been vetted for security vulnerabilities, ensuring they do not introduce risks into the application."
+D3-RN,Harden,,Reference Nullification,,"Invalidating all pointers that reference a specific memory block, ensuring that the block cannot be accessed or modified after deallocation."
+D3-PV,Harden,,Pointer Validation,,Ensuring that a pointer variable has the required properties for use.
+D3-NPC,Harden,,,Null Pointer Checking,Checking if a pointer is NULL.
+D3-MBSV,Harden,,,Memory Block Start Validation,Ensuring that a pointer accurately references the beginning of a designated memory block.
+D3-IRV,Harden,,Integer Range Validation,,Ensuring that an integer is within a valid range.
+D3-CS,Harden,,Credential Scrubbing,,The systematic removal of hard-coded credentials from source code to prevent accidental exposure and unauthorized access.
+D3-AA,Harden,Agent Authentication,,,
+D3-TBA,Harden,,Token-based Authentication,,"Token-based authentication is an authentication protocol where users verify their identity in exchange for a unique access token. Users can then access the website, application, or resource for the life of the token without having to re-enter their credentials."
+D3-PWA,Harden,,Password Authentication,,"Password authentication is a security mechanism used to verify the identity of a user or entity attempting to access a system or resource by requiring the input of a secret string of characters, known as a password, that is associated with the user or entity."
+D3-MFA,Harden,,Multi-factor Authentication,,Requiring proof of two or more pieces of evidence in order to authenticate a user.
+D3-CBAN,Harden,,Certificate-based Authentication,,Requiring a digital certificate in order to authenticate a user.
+D3-BAN,Harden,,Biometric Authentication,,Using biological measures in order to authenticate a user.
 D3-MH,Harden,Message Hardening,,,
 D3-TAAN,Harden,,Transfer Agent Authentication,,Validating that server components of a messaging infrastructure are authorized to send a particular message.
 D3-MENCR,Harden,,Message Encryption,,Encrypting a message body using a cryptographic key.
 D3-MAN,Harden,,Message Authentication,,Authenticating the sender of a message and ensuring message integrity.
 D3-CH,Harden,Credential Hardening,,,
-D3-CTS,Harden,,Credential Transmission Scoping,,Limiting the transmission of a credential to a scoped set of relying parties.
-D3-UAP,Harden,,User Account Permissions,,Restricting a user account's access to resources.
-D3-CBAN,Harden,,Certificate-based Authentication,,Requiring a digital certificate in order to authenticate a user.
-D3-CP,Harden,,Certificate Pinning,,Persisting either a server's X.509 certificate or their public key and comparing that to server's presented identity to allow for greater client confidence in the remote server's identity for SSL connections.
-D3-DTP,Harden,,Domain Trust Policy,,Restricting inter-domain trust by modifying domain configuration.
-D3-BAN,Harden,,Biometric Authentication,,Using biological measures in order to authenticate a user.
-D3-OTP,Harden,,One-time Password,,A one-time password is valid for only one user authentication.
+D3-TB,Harden,,Token Binding,,"Token binding is a security mechanism used to enhance the protection of tokens, such as cookies or OAuth tokens, by binding them to a specific connection."
 D3-SPP,Harden,,Strong Password Policy,,Modifying system configuration to increase password strength.
-D3-CRO,Harden,,Credential Rotation,,Expiring an existing set of credentials and reissuing a new valid set
-D3-MFA,Harden,,Multi-factor Authentication,,Requiring proof of two or more pieces of evidence in order to authenticate a user.
+D3-CRO,Harden,,Credential Rotation,,"Credential rotation is a security procedure in which authentication credentials, such as passwords, API keys, or certificates, are regularly changed or replaced to minimize the risk of unauthorized access."
+D3-PR,Harden,,,Password Rotation,Requiring periodic regeneneration of passwords for accounts.
+D3-OTP,Harden,,,One-time Password,A one-time password is valid for only one user authentication.
+D3-CERO,Harden,,,Certificate Rotation,"The replacement of existing certificates with new ones, generated by entirely new private keys."
+D3-CP,Harden,,Certificate Pinning,,Persisting either a server's X.509 certificate or their public key and comparing that to server's presented identity to allow for greater client confidence in the remote server's identity for SSL connections.
 D3-PH,Harden,Platform Hardening,,,
 D3-DENCR,Harden,,Disk Encryption,,Encrypting a hard disk partition to prevent cleartext access to a file system.
 D3-TBI,Harden,,TPM Boot Integrity,,Assuring the integrity of a platform by demonstrating that the boot process starts from a trusted combination of hardware and software and continues until the operating system has fully booted and applications are running.  Sometimes called Static Root of Trust Measurement (STRM).
@@ -50,7 +63,6 @@ D3-SCP,Harden,,System Configuration Permissions,,Restricting system configuratio
 D3-FE,Harden,,File Encryption,,Encrypting a file using a cryptographic key.
 D3-SU,Harden,,Software Update,,Replacing old software on a computer system component.
 D3-DLIC,Harden,,Driver Load Integrity Checking,,Ensuring the integrity of drivers loaded during initialization of the operating system.
-D3-LFP,Harden,,Local File Permissions,,Restricting access to a local file by configuring operating system functionality.
 D3-AH,Harden,Application Hardening,,,
 D3-SFCV,Harden,,Stack Frame Canary Validation,,Comparing a value stored in a stack frame with a known good value in order to prevent or detect a memory segment overwrite.
 D3-SAOR,Harden,,Segment Address Offset Randomization,,Randomizing the base (start) address of one or more segments of memory during the initialization of a process.
@@ -137,14 +149,30 @@ D3-PFV,Detect,,,Peripheral Firmware Verification,Cryptographically verifying per
 D3-FEMC,Detect,,Firmware Embedded Monitoring Code,,Monitoring code is injected into firmware for integrity monitoring of firmware and firmware data.
 D3-FBA,Detect,,Firmware Behavior Analysis,,Analyzing the behavior of embedded code in firmware and looking for anomalous behavior and suspicious activity.
 D3-FIM,Detect,,File Integrity Monitoring,,Detecting any suspicious changes to files in a computer system.
+D3-AMED,Isolate,Access Mediation,,,
+D3-SCF,Isolate,,System Call Filtering,,Controlling access to local computer system resources with kernel-level capabilities.
+D3-LFAM,Isolate,,,Local File Access Mediation,Restricting access to a local file by configuring operating system functionality.
+D3-PAM,Isolate,,Physical Access Mediation,,"Physical access mediation is the process of granting or denying specific requests to enter specific physical facilities (e.g., Federal buildings, military establishments, border crossing entrances.)"
+D3-NRAM,Isolate,,Network Resource Access Mediation,,Control of access to organizational systems and services by users or processes over a network.
+D3-WSAM,Isolate,,,Web Session Access Mediation,Web session access mediation is the regulation of access to web-based resources and sessions over a network.
+D3-PBWSAM,Isolate,,,Proxy-based Web Server Access Mediation,Proxy-based web server access mediation focuses on the regulation of web server access through intermediary proxy servers.
+D3-EBWSAM,Isolate,,,Endpoint-based Web Server Access Mediation,Endpoint-based web server access mediation regulates web server access directly from user endpoints.
+D3-RFAM,Isolate,,,Remote File Access Mediation,Remote file access mediation manages remote access to file systems over a network.
+D3-NAM,Isolate,,Network Access Mediation,,"Network access mediation is the control method for authorizing access to a system by a user (or a process acting on behalf of a user) communicating through a network, including a local area network, a wide area network, and the Internet."
+D3-RAM,Isolate,,,Routing Access Mediation,"Routing Access Mediation is a network security approach that manages and controls access at the network layer using VPNs, tunneling protocols, firewall rules, and traffic inspection to ensure secure and efficient data routing."
+D3-LAMED,Isolate,,,LAN Access Mediation,"LAN access mediation is a network security strategy that controls and manages access to a Local Area Network by ensuring only authorized devices and users can connect, enhancing overall security."
+D3-IOPR,Isolate,,IO Port Restriction,,Limiting access to computer input/output (IO) ports to restrict unauthorized devices.
+D3-CTS,Isolate,,Credential Transmission Scoping,,Limiting the transmission of a credential to a scoped set of relying parties.
 D3-EI,Isolate,Execution Isolation,,,
 D3-KBPI,Isolate,,Kernel-based Process Isolation,,Using kernel-level capabilities to isolate processes.
-D3-SCF,Isolate,,,System Call Filtering,Configuring a kernel to use an allow or deny list to filter kernel api calls.
-D3-MAC,Isolate,,,Mandatory Access Control,Controlling access to local computer system resources with kernel-level capabilities.
-D3-IOPR,Isolate,,IO Port Restriction,,Limiting access to computer input/output (IO) ports to restrict unauthorized devices.
 D3-HBPI,Isolate,,Hardware-based Process Isolation,,Preventing one process from writing to the memory space of another process through hardware based address manager implementations.
 D3-EDL,Isolate,,Executable Denylisting,,Blocking the execution of files on a host in accordance with defined application policy rules.
 D3-EAL,Isolate,,Executable Allowlisting,,Using a digital signature to authenticate a file before opening.
+D3-ABPI,Isolate,,Application-based Process Isolation,,Application code which prevents its own subroutines from accessing intra-process / internal memory space.
+D3-APA,Isolate,Access Policy Administration,,,
+D3-UAP,Isolate,,User Account Permissions,,Restricting a user account's access to resources.
+D3-LFP,Isolate,,Local File Permissions,,Restricting access to a local file by configuring operating system functionality.
+D3-DTP,Isolate,,Domain Trust Policy,,Restricting inter-domain trust by modifying domain configuration.
 D3-NI,Isolate,Network Isolation,,,
 D3-NTF,Isolate,,Network Traffic Filtering,,Restricting network traffic originating from any location.
 D3-OTF,Isolate,,,Outbound Traffic Filtering,Restricting network traffic originating from a private host or enclave destined towards untrusted networks.

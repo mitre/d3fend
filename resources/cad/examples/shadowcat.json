@@ -20,7 +20,7 @@
     "nodes": [
         {
             "id": "0.581653696636286",
-            "type": "agentSelectorNode",
+            "type": "agent-node",
             "position": {
                 "x": -423.6062717718771,
                 "y": -240.198589595253
@@ -45,7 +45,7 @@
         },
         {
             "id": "0.4413793232667994",
-            "type": "attackSelectorNode",
+            "type": "attack-node",
             "position": {
                 "x": -267.8525450305963,
                 "y": -62.3136109397517
@@ -71,7 +71,7 @@
         },
         {
             "id": "0.13256944195839404",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
                 "x": 213.3029750942008,
                 "y": 321.1215752403066
@@ -97,7 +97,7 @@
         },
         {
             "id": "0.6071601385874087",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
                 "x": 209.96835792390914,
                 "y": -64.67806423823373
@@ -123,7 +123,7 @@
         },
         {
             "id": "0.42705486882231847",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
                 "x": 209.2630520996877,
                 "y": 61.07933072109077
@@ -149,7 +149,7 @@
         },
         {
             "id": "0.4798872031112791",
-            "type": "attackSelectorNode",
+            "type": "attack-node",
             "position": {
                 "x": -271.3253601599862,
                 "y": 303.3630009698479
@@ -175,7 +175,7 @@
         },
         {
             "id": "0.10426293338922998",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
                 "x": 211.13752703624448,
                 "y": -218.0156297879889
@@ -201,7 +201,7 @@
         },
         {
             "id": "0.25835674899524097",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
                 "x": 229.52181001394598,
                 "y": 625.5180979020506
@@ -227,7 +227,7 @@
         },
         {
             "id": "0.7792835143423777",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
                 "x": 214.81813931789839,
                 "y": 483.00653438572215
@@ -253,7 +253,7 @@
         },
         {
             "id": "0.04249325034853346",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
                 "x": 572.0898252091145,
                 "y": 455.93690297886803
@@ -277,7 +277,7 @@
         },
         {
             "id": "0.3108464738831057",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
                 "x": 533.5525986474474,
                 "y": 782.2670466372585
@@ -301,7 +301,7 @@
         },
         {
             "id": "0.552059671457854",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
                 "x": 826.842115657484,
                 "y": 771.7946511022947
@@ -325,7 +325,7 @@
         },
         {
             "id": "0.2898381946203664",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
                 "x": 835.1114031895263,
                 "y": 927.376908943284
@@ -351,7 +351,7 @@
         },
         {
             "id": "0.7535326980747047",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
                 "x": 210.8543210597032,
                 "y": 189.08265439536297
@@ -377,7 +377,7 @@
         },
         {
             "id": "0.3294135325329819",
-            "type": "attackSelectorNode",
+            "type": "attack-node",
             "position": {
                 "x": -271.41748356949086,
                 "y": 478.77381183585794
@@ -403,7 +403,7 @@
         },
         {
             "id": "0.9674498279207843",
-            "type": "attackSelectorNode",
+            "type": "attack-node",
             "position": {
                 "x": -273.49845946640073,
                 "y": 652.862648368711
@@ -429,7 +429,7 @@
         },
         {
             "id": "0.6835359685533496",
-            "type": "attackSelectorNode",
+            "type": "attack-node",
             "position": {
                 "x": -276.60288076032884,
                 "y": 797.250395136911
@@ -455,7 +455,7 @@
         },
         {
             "id": "0.34778388263272275",
-            "type": "attackSelectorNode",
+            "type": "attack-node",
             "position": {
                 "x": -274.81212059291977,
                 "y": 969.911380537678
@@ -481,7 +481,7 @@
         },
         {
             "id": "0.921380612603658",
-            "type": "attackSelectorNode",
+            "type": "attack-node",
             "position": {
                 "x": -270.00385015759196,
                 "y": 1276.9159040584866
@@ -507,7 +507,7 @@
         },
         {
             "id": "0.7984230369581443",
-            "type": "attackSelectorNode",
+            "type": "attack-node",
             "position": {
                 "x": -268.9562162010261,
                 "y": 1434.6361771344525
@@ -531,7 +531,7 @@
         },
         {
             "id": "0.21872006297325297",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
                 "x": 539.8671110601074,
                 "y": 986.2728500918984
@@ -555,7 +555,7 @@
         },
         {
             "id": "0.03979030054819055",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
                 "x": 402.37472374100764,
                 "y": 1142.513939029318
@@ -581,7 +581,7 @@
         },
         {
             "id": "0.9366371466114469",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
                 "x": 411.21102169602636,
                 "y": 1333.7071327598007
@@ -605,7 +605,7 @@
         },
         {
             "id": "0.6553811899665475",
-            "type": "countermeasureSelectorNode",
+            "type": "countermeasure-node",
             "position": {
                 "x": 714.9968077618944,
                 "y": 1327.6746304575581
@@ -629,7 +629,7 @@
         },
         {
             "id": "0.5848797624184087",
-            "type": "countermeasureSelectorNode",
+            "type": "countermeasure-node",
             "position": {
                 "x": 897.5976569198427,
                 "y": 1154.439596377508
@@ -653,7 +653,7 @@
         },
         {
             "id": "0.9621202021427397",
-            "type": "countermeasureSelectorNode",
+            "type": "countermeasure-node",
             "position": {
                 "x": 847.967254746639,
                 "y": 610.1423327195739
@@ -677,7 +677,7 @@
         },
         {
             "id": "0.30898977256836024",
-            "type": "countermeasureSelectorNode",
+            "type": "countermeasure-node",
             "position": {
                 "x": 569.9826692848965,
                 "y": 322.03242415284024
@@ -701,7 +701,7 @@
         },
         {
             "id": "0.48477799583965264",
-            "type": "countermeasureSelectorNode",
+            "type": "countermeasure-node",
             "position": {
                 "x": 1189.3479393663915,
                 "y": 842.6801313589822
@@ -732,7 +732,7 @@
         },
         {
             "id": "0.2898381946203664-copy0.13536047675435314",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
                 "x": 863.1141071164341,
                 "y": 1613.548890150405
@@ -758,7 +758,7 @@
         },
         {
             "id": "0.4032013612667408",
-            "type": "countermeasureSelectorNode",
+            "type": "countermeasure-node",
             "position": {
                 "x": 530.072110490575,
                 "y": 179.75690215566414
@@ -784,7 +784,7 @@
         },
         {
             "id": "0.8731411193589528",
-            "type": "countermeasureSelectorNode",
+            "type": "countermeasure-node",
             "position": {
                 "x": 575.863652303743,
                 "y": -121.64140048375452
@@ -810,7 +810,7 @@
         },
         {
             "id": "0.7716786725845816",
-            "type": "noteNode",
+            "type": "note-node",
             "position": {
                 "x": 904.5819171585027,
                 "y": 19.647700076469555
@@ -840,7 +840,7 @@
         },
         {
             "id": "0.6074354245521373",
-            "type": "agentSelectorNode",
+            "type": "agent-node",
             "position": {
                 "x": 901.4255422983101,
                 "y": 465.754978413104
@@ -863,7 +863,7 @@
         },
         {
             "id": "0.2111806389572204",
-            "type": "attackSelectorNode",
+            "type": "attack-node",
             "position": {
                 "x": -272.67203028053564,
                 "y": 1119.8231293204587
@@ -889,7 +889,7 @@
         },
         {
             "id": "0.5307585939533781",
-            "type": "noteNode",
+            "type": "note-node",
             "position": {
                 "x": 558.817979386388,
                 "y": -327.8241433492067
@@ -917,7 +917,7 @@
         },
         {
             "id": "0.8210470873059882",
-            "type": "noteNode",
+            "type": "note-node",
             "position": {
                 "x": 924.5530591886134,
                 "y": -195.67750442617532

@@ -22,7 +22,7 @@
     "nodes": [
         {
             "id": "0.7699520307088017",
-            "type": "countermeasureSelectorNode",
+            "type": "countermeasure-node",
             "position": {
                 "x": 370.3562019022501,
                 "y": 257.520663233301
@@ -46,7 +46,7 @@
         },
         {
             "id": "0.049622708963256046",
-            "type": "countermeasureSelectorNode",
+            "type": "countermeasure-node",
             "position": {
                 "x": 470.4304356778989,
                 "y": -205.7791145619465
@@ -81,7 +81,7 @@
         },
         {
             "id": "0.5362248052375376",
-            "type": "countermeasureSelectorNode",
+            "type": "countermeasure-node",
             "position": {
                 "x": 914.7462682085893,
                 "y": 4.313285773211533
@@ -107,7 +107,7 @@
         },
         {
             "id": "0.09389462338428678",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
                 "x": 1121.0259972506567,
                 "y": 154.31540998547388
@@ -131,7 +131,7 @@
         },
         {
             "id": "0.2937303559851123",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
                 "x": 1436.8265401840295,
                 "y": 40.399017170206776
@@ -155,7 +155,7 @@
         },
         {
             "id": "0.9987487397579196",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
                 "x": 799.5993941626014,
                 "y": 357.5497927103316
@@ -179,7 +179,7 @@
         },
         {
             "id": "0.6149196607789622",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
                 "x": 1197.0207689800052,
                 "y": 366.2586492278352
@@ -205,7 +205,7 @@
         },
         {
             "id": "0.025743875674319017",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
                 "x": 900.5073910661729,
                 "y": 517.4348046917377
@@ -229,7 +229,7 @@
         },
         {
             "id": "0.6869081896378731",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
                 "x": 1100.5073910661729,
                 "y": 517.4348046917377
@@ -253,7 +253,7 @@
         },
         {
             "id": "0.004501008421587072",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
                 "x": 1300.5073910661729,
                 "y": 517.4348046917377
@@ -277,7 +277,7 @@
         },
         {
             "id": "0.7846273470918882",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
                 "x": 1500.5073910661729,
                 "y": 517.4348046917377
@@ -301,7 +301,7 @@
         },
         {
             "id": "0.7546456441973028",
-            "type": "attackSelectorNode",
+            "type": "attack-node",
             "position": {
                 "x": 478.26399706062807,
                 "y": 496.89784372063673
@@ -325,7 +325,7 @@
         },
         {
             "id": "0.3525054002262139",
-            "type": "countermeasureSelectorNode",
+            "type": "countermeasure-node",
             "position": {
                 "x": 788.5264189211426,
                 "y": 190.0899934270509
@@ -349,7 +349,7 @@
         },
         {
             "id": "0.4057756330860133",
-            "type": "noteNode",
+            "type": "note-node",
             "position": {
                 "x": -81.38886470035175,
                 "y": 41.290556068335945
@@ -379,7 +379,7 @@
         },
         {
             "id": "0.43697408665424",
-            "type": "countermeasureSelectorNode",
+            "type": "countermeasure-node",
             "position": {
                 "x": 172.99326012884458,
                 "y": 485.67940046736237

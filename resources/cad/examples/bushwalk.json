@@ -9,27 +9,30 @@
         ],
         "description": "Simple defense in depth demo",
         "article": "",
-        "d3fend_version": "0.16.0",
+        "d3fend_version": "1.0.0",
         "cad_schema_version": 1,
-        "published_date": "2024-10-08T00:23:02.617Z",
+        "published_date": "2024-12-20T03:31:28.450Z",
         "references": [
+            "https://cloud.google.com/blog/topics/threat-intelligence/investigating-ivanti-exploitation-persistence/",
             "https://attack.mitre.org/software/S1118/"
         ],
-        "settings": {}
+        "settings": {},
+        "cad_data_version": 1
     },
     "nodes": [
         {
             "id": "0.28745244020819394",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
-                "x": -97.45624356799345,
-                "y": -486.41580708471406
+                "x": -60.14581703197618,
+                "y": -474.68751132878936
             },
             "data": {
                 "label": "OS API Write File",
                 "sequence": "0",
                 "d3f_class": "d3f:OSAPIWriteFile",
-                "user_properties": []
+                "user_properties": [],
+                "d3f_class_label": "OS API Write File"
             },
             "origin": [
                 0.5,
@@ -44,7 +47,7 @@
         },
         {
             "id": "0.9734359398205206",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
                 "x": 296.98873576274076,
                 "y": -474.58176656760077
@@ -53,7 +56,8 @@
                 "label": "Write File Syscall",
                 "sequence": "0",
                 "d3f_class": "d3f:WriteFile",
-                "user_properties": []
+                "user_properties": [],
+                "d3f_class_label": "Write File Syscall"
             },
             "origin": [
                 0.5,
@@ -68,87 +72,102 @@
         },
         {
             "id": "0.2991290665885308",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
-                "x": -124.70697200577503,
-                "y": -286.12331949494006
+                "x": -59.99371562742169,
+                "y": -282.71096879150963
             },
             "data": {
-                "label": "BUSHWALK Malware",
+                "label": "BUSHWALK Injected Subroutine",
                 "sequence": "0",
-                "d3f_class": "d3f:ExecutableBinary",
-                "user_properties": []
+                "d3f_class": "d3f:Subroutine",
+                "user_properties": [
+                    [
+                        "comment",
+                        "perl logic\n"
+                    ]
+                ],
+                "d3f_class_label": "Subroutine"
             },
             "origin": [
                 0.5,
                 0
             ],
             "measured": {
-                "width": 176,
-                "height": 99
+                "width": 302,
+                "height": 118
             },
             "selected": false,
             "dragging": false
         },
         {
             "id": "0.09193859368571666",
-            "type": "attackSelectorNode",
+            "type": "attack-node",
             "position": {
-                "x": -455.6557248415316,
-                "y": -286.6295900554935
+                "x": -358.201870871055,
+                "y": -533.5879035190502
             },
             "data": {
                 "label": "Compromise Host Software Binary",
-                "sequence": "0",
+                "sequence": "1",
                 "user_properties": [],
-                "d3f_class": "d3f:T1554"
+                "d3f_class": "d3f:T1554",
+                "d3f_class_label": "Compromise Host Software Binary"
             },
             "origin": [
                 0.5,
                 0
             ],
             "measured": {
-                "width": 176,
-                "height": 123
+                "width": 251,
+                "height": 133
             },
             "selected": false,
-            "dragging": false
+            "dragging": false,
+            "width": 251,
+            "height": 133
         },
         {
             "id": "0.026668828190339",
-            "type": "agentSelectorNode",
+            "type": "agent-node",
             "position": {
-                "x": -453.5498350435255,
-                "y": -585.2030053668983
+                "x": -586.4732401439464,
+                "y": -729.7990258041975
             },
             "data": {
                 "label": "attacker",
                 "sequence": "0",
-                "user_properties": []
+                "user_properties": [
+                    [
+                        "group",
+                        "UNC5325"
+                    ]
+                ]
             },
             "origin": [
                 0.5,
                 0
             ],
             "measured": {
-                "width": 176,
-                "height": 76
+                "width": 302,
+                "height": 95
             },
             "selected": false,
             "dragging": false
         },
         {
             "id": "0.7438529946288932",
-            "type": "artifactSelectorNode",
+            "type": "artifact-node",
             "position": {
-                "x": 737.85541880982,
+                "x": 665.6419364487757,
                 "y": -475.6407074238169
             },
             "data": {
                 "label": "OS Executable File",
                 "sequence": "0",
                 "d3f_class": "d3f:OperatingSystemExecutableFile",
-                "user_properties": []
+                "user_properties": [],
+                "d3f_class_label": "OS Executable File"
             },
             "origin": [
                 0.5,
@@ -162,41 +181,18 @@
             "dragging": false
         },
         {
-            "id": "0.8639284363107326",
-            "type": "countermeasureSelectorNode",
-            "position": {
-                "x": -124.853987768107,
-                "y": -126.22264306364235
-            },
-            "data": {
-                "label": "Executable Allowlisting",
-                "sequence": "0",
-                "d3f_class": "d3f:ExecutableAllowlisting",
-                "user_properties": []
-            },
-            "origin": [
-                0.5,
-                0
-            ],
-            "measured": {
-                "width": 176,
-                "height": 110
-            },
-            "selected": false,
-            "dragging": false
-        },
-        {
             "id": "0.1803005710496245",
-            "type": "countermeasureSelectorNode",
+            "type": "countermeasure-node",
             "position": {
                 "x": 295.87508120312754,
-                "y": -701.9008044548227
+                "y": -696.7029072789463
             },
             "data": {
                 "label": "System Call Analysis",
-                "sequence": "2",
+                "sequence": "3",
                 "d3f_class": "d3f:SystemCallAnalysis",
-                "user_properties": []
+                "user_properties": [],
+                "d3f_class_label": "System Call Analysis"
             },
             "origin": [
                 0.5,
@@ -211,16 +207,17 @@
         },
         {
             "id": "0.3180850673915423",
-            "type": "countermeasureSelectorNode",
+            "type": "countermeasure-node",
             "position": {
-                "x": 733.5290198209702,
+                "x": 661.315537459926,
                 "y": -697.3687809996632
             },
             "data": {
                 "label": "File Analysis",
-                "sequence": "3",
+                "sequence": "4",
                 "d3f_class": "d3f:FileAnalysis",
-                "user_properties": []
+                "user_properties": [],
+                "d3f_class_label": "File Analysis"
             },
             "origin": [
                 0.5,
@@ -235,16 +232,17 @@
         },
         {
             "id": "0.3615545411229423",
-            "type": "countermeasureSelectorNode",
+            "type": "countermeasure-node",
             "position": {
-                "x": 983.5091128050223,
+                "x": 911.295630443978,
                 "y": -700.4538274042884
             },
             "data": {
                 "label": "File Integrity Monitoring",
-                "sequence": "4",
+                "sequence": "5",
                 "d3f_class": "d3f:FileIntegrityMonitoring",
-                "user_properties": []
+                "user_properties": [],
+                "d3f_class_label": "File Integrity Monitoring"
             },
             "origin": [
                 0.5,
@@ -259,16 +257,17 @@
         },
         {
             "id": "0.6395594717773364",
-            "type": "countermeasureSelectorNode",
+            "type": "countermeasure-node",
             "position": {
                 "x": 304.9250080885881,
                 "y": -276.7242378961826
             },
             "data": {
                 "label": "System Call Filtering",
-                "sequence": "1",
+                "sequence": "2",
                 "d3f_class": "d3f:SystemCallFiltering",
-                "user_properties": []
+                "user_properties": [],
+                "d3f_class_label": "System Call Filtering"
             },
             "origin": [
                 0.5,
@@ -283,9 +282,9 @@
         },
         {
             "id": "0.25308669626129376",
-            "type": "noteNode",
+            "type": "note-node",
             "position": {
-                "x": 982.6795799010847,
+                "x": 910.4660975400404,
                 "y": -289.56055137678044
             },
             "data": {
@@ -305,6 +304,209 @@
             "measured": {
                 "width": 240,
                 "height": 137
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.6059102509318336",
+            "type": "artifact-node",
+            "position": {
+                "x": -706.9918767955412,
+                "y": -91.20052712104757
+            },
+            "data": {
+                "label": "Web Server Application Process",
+                "sequence": "0",
+                "user_properties": [],
+                "d3f_class_label": ":WebServerApplicationProcess",
+                "d3f_class": ":WebServerApplicationProcess"
+            },
+            "measured": {
+                "width": 241,
+                "height": 139
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 241,
+            "height": 139
+        },
+        {
+            "id": "0.8386658673435847",
+            "type": "artifact-node",
+            "position": {
+                "x": -208.73307487242883,
+                "y": -77.95214923840555
+            },
+            "data": {
+                "label": "CGI Executable Script",
+                "sequence": "0",
+                "user_properties": [
+                    [
+                        "name",
+                        "querymanifest.cgi"
+                    ]
+                ],
+                "d3f_class_label": "Executable Script",
+                "d3f_class": "d3f:ExecutableScript"
+            },
+            "measured": {
+                "width": 302,
+                "height": 118
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.8011947706675827",
+            "type": "attack-node",
+            "position": {
+                "x": -705.6219224790425,
+                "y": -337.4169816672314
+            },
+            "data": {
+                "label": "Exploit Public-Facing Application",
+                "sequence": "0",
+                "user_properties": [],
+                "d3f_class_label": "Exploit Public-Facing Application",
+                "d3f_class": "d3f:T1190"
+            },
+            "measured": {
+                "width": 249,
+                "height": 117
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 249,
+            "height": 117
+        },
+        {
+            "id": "0.2926946173985914",
+            "type": "artifact-node",
+            "position": {
+                "x": -702.6997584054864,
+                "y": 143.47476990657887
+            },
+            "data": {
+                "label": "Web Server Application",
+                "sequence": "0",
+                "user_properties": [],
+                "d3f_class_label": "Web Server Application",
+                "d3f_class": "d3f:WebServerApplication"
+            },
+            "measured": {
+                "width": 238,
+                "height": 89
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 238,
+            "height": 89
+        },
+        {
+            "id": "0.23244452472671295",
+            "type": "artifact-node",
+            "position": {
+                "x": -145.62512137835256,
+                "y": 138.0497387516314
+            },
+            "data": {
+                "label": "Web Application",
+                "sequence": "0",
+                "user_properties": [],
+                "d3f_class_label": ":WebApplication",
+                "d3f_class": ":WebApplication"
+            },
+            "measured": {
+                "width": 176,
+                "height": 99
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.08600091218423167",
+            "type": "artifact-node",
+            "position": {
+                "x": -143.57376949119194,
+                "y": 339.6003581836644
+            },
+            "data": {
+                "label": "Service Application",
+                "sequence": "0",
+                "user_properties": [],
+                "d3f_class_label": "Service Application",
+                "d3f_class": "d3f:ServiceApplication"
+            },
+            "measured": {
+                "width": 176,
+                "height": 99
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.8541813101494801",
+            "type": "note-node",
+            "position": {
+                "x": -696.637253378603,
+                "y": 303.1188752486345
+            },
+            "data": {
+                "label": "Proposed Addtions to D3FEND",
+                "sequence": "0",
+                "user_properties": [
+                    [
+                        "rdfs:comment",
+                        "This CAD diagram shows you how to propose and submit new classes\nand properties to the upstream D3FEND ontology, accessible here:\n\n    https://github.com/d3fend/d3fend-ontology\n\n\nThis syntax:\n\n    :WebApplication\n\nindicates that we are adding a new classto the ontology. Note the colon\ncharacter and lack of spaces. Also, this proposal fits :WebApplication\ninto the existing ontology as a subclass of d3f:ServiceApplication.\n\n\nThus, the Node will be interpreted as a class instead of an instance.\n\nThe same works for properties as well, note the\n:has-payload property.\n\n\n\nYou can click \"Save As\" > \"D3FEND Extension\" and submit the file to the\nD3FEND team for consideration.\n\n\n"
+                    ]
+                ]
+            },
+            "measured": {
+                "width": 398,
+                "height": 397
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.16777283558886358",
+            "type": "countermeasure-node",
+            "position": {
+                "x": 215.4002936150483,
+                "y": -119.99803095541215
+            },
+            "data": {
+                "label": "File Integrity Monitoring",
+                "sequence": "1",
+                "d3f_class": "d3f:FileIntegrityMonitoring",
+                "user_properties": [],
+                "d3f_class_label": "File Integrity Monitoring"
+            },
+            "measured": {
+                "width": 176,
+                "height": 110
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "0.27672783406130097",
+            "type": "countermeasure-node",
+            "position": {
+                "x": 215.2565049718804,
+                "y": 44.90788439011658
+            },
+            "data": {
+                "label": "Local File Permissions",
+                "sequence": "0",
+                "d3f_class": "d3f:LocalFilePermissions",
+                "user_properties": [],
+                "d3f_class_label": "Local File Permissions"
+            },
+            "measured": {
+                "width": 176,
+                "height": 110
             },
             "selected": false,
             "dragging": false
@@ -330,23 +532,9 @@
         {
             "type": "editableEdge",
             "data": {
-                "label": "contains",
-                "d3f_property": "d3f:contains"
-            },
-            "markerEnd": {
-                "type": "arrowclosed"
-            },
-            "source": "0.28745244020819394",
-            "sourceHandle": "source",
-            "target": "0.2991290665885308",
-            "targetHandle": "target",
-            "id": "xy-edge__0.28745244020819394source-0.2991290665885308target",
-            "selected": false
-        },
-        {
-            "type": "editableEdge",
-            "data": {
-                "label": "uses-tool"
+                "label": "uses",
+                "d3f_class": "d3f:uses",
+                "d3f_class_label": "uses"
             },
             "markerEnd": {
                 "type": "arrowclosed"
@@ -361,8 +549,10 @@
         {
             "type": "editableEdge",
             "data": {
-                "label": "executes",
-                "d3f_property": "d3f:executes"
+                "label": "participates-in",
+                "d3f_property": "d3f:executes",
+                "d3f_class": "d3f:participates-in",
+                "d3f_class_label": "participates-in"
             },
             "markerEnd": {
                 "type": "arrowclosed"
@@ -387,36 +577,6 @@
             "target": "0.7438529946288932",
             "targetHandle": "target",
             "id": "xy-edge__0.9734359398205206source-0.7438529946288932target",
-            "selected": false
-        },
-        {
-            "type": "editableEdge",
-            "data": {
-                "label": "denies"
-            },
-            "markerEnd": {
-                "type": "arrowclosed"
-            },
-            "source": "0.2991290665885308",
-            "sourceHandle": "source",
-            "target": "0.8639284363107326",
-            "targetHandle": "target",
-            "id": "xy-edge__0.2991290665885308source-0.8639284363107326target",
-            "selected": false
-        },
-        {
-            "type": "editableEdge",
-            "data": {
-                "label": "requires"
-            },
-            "markerEnd": {
-                "type": "arrowclosed"
-            },
-            "source": "0.026668828190339",
-            "sourceHandle": "source",
-            "target": "0.2991290665885308",
-            "targetHandle": "target",
-            "id": "xy-edge__0.026668828190339source-0.2991290665885308target",
             "selected": false
         },
         {
@@ -497,6 +657,217 @@
             "target": "0.25308669626129376",
             "targetHandle": "target",
             "id": "xy-edge__0.3615545411229423source-0.25308669626129376target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "invokes",
+                "d3f_class": "d3f:invokes",
+                "d3f_class_label": "invokes"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.2991290665885308",
+            "sourceHandle": "source",
+            "target": "0.28745244020819394",
+            "targetHandle": "target",
+            "id": "xy-edge__0.2991290665885308source-0.28745244020819394target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "contains",
+                "d3f_class": "d3f:contains",
+                "d3f_class_label": "contains"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.8386658673435847",
+            "sourceHandle": "source",
+            "target": "0.2991290665885308",
+            "targetHandle": "target",
+            "id": "xy-edge__0.8386658673435847source-0.2991290665885308target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "injects",
+                "d3f_class": "d3f:injects",
+                "d3f_class_label": "injects"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.8011947706675827",
+            "sourceHandle": "source",
+            "target": "0.6059102509318336",
+            "targetHandle": "target",
+            "id": "xy-edge__0.8011947706675827source-0.6059102509318336target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "injects",
+                "d3f_class": "d3f:injects",
+                "d3f_class_label": "injects"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.6059102509318336",
+            "sourceHandle": "source",
+            "target": "0.8386658673435847",
+            "targetHandle": "target",
+            "id": "xy-edge__0.6059102509318336source-0.8386658673435847target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": ":has-payload",
+                "d3f_property": ":has-payload",
+                "d3f_class_label": ":has-payload"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.8011947706675827",
+            "sourceHandle": "source",
+            "target": "0.2991290665885308",
+            "targetHandle": "target",
+            "id": "xy-edge__0.8011947706675827source-0.2991290665885308target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "instructs",
+                "d3f_class": "d3f:instructs",
+                "d3f_class_label": "instructs"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.2926946173985914",
+            "sourceHandle": "source",
+            "target": "0.6059102509318336",
+            "targetHandle": "target",
+            "id": "xy-edge__0.2926946173985914source-0.6059102509318336target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "contains",
+                "d3f_class": "d3f:contains",
+                "d3f_class_label": "contains"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.23244452472671295",
+            "sourceHandle": "source",
+            "target": "0.8386658673435847",
+            "targetHandle": "target",
+            "id": "xy-edge__0.23244452472671295source-0.8386658673435847target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "instructs",
+                "d3f_class": "d3f:instructs",
+                "d3f_class_label": "instructs"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.23244452472671295",
+            "sourceHandle": "source",
+            "target": "0.2926946173985914",
+            "targetHandle": "target",
+            "id": "xy-edge__0.23244452472671295source-0.2926946173985914target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "participates-in",
+                "d3f_class": "d3f:participates-in",
+                "d3f_class_label": "participates-in"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.026668828190339",
+            "sourceHandle": "source",
+            "target": "0.8011947706675827",
+            "targetHandle": "target",
+            "id": "xy-edge__0.026668828190339source-0.8011947706675827target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "rdfs:subClassOf",
+                "d3f_property": "rdfs:subClassOf",
+                "d3f_class_label": "rdfs:subClassOf"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.23244452472671295",
+            "sourceHandle": "source",
+            "target": "0.08600091218423167",
+            "targetHandle": "target",
+            "id": "xy-edge__0.23244452472671295source-0.08600091218423167target",
+            "selected": false
+        },
+        {
+            "type": "editableEdge",
+            "data": {
+                "label": "note",
+                "d3f_property": "note",
+                "d3f_class_label": "note"
+            },
+            "markerEnd": {
+                "type": "arrowclosed"
+            },
+            "source": "0.8541813101494801",
+            "sourceHandle": "source",
+            "target": "0.23244452472671295",
+            "targetHandle": "target",
+            "id": "xy-edge__0.8541813101494801source-0.23244452472671295target",
+            "selected": false
+        },
+        {
+            "data": {
+                "label": "analyzes"
+            },
+            "markerStart": "arrowclosed",
+            "source": "0.16777283558886358",
+            "sourceHandle": "source",
+            "target": "0.8386658673435847",
+            "targetHandle": "target",
+            "id": "xy-edge__0.16777283558886358source-0.8386658673435847target",
+            "selected": false
+        },
+        {
+            "data": {
+                "label": "restricts"
+            },
+            "markerStart": "arrowclosed",
+            "source": "0.27672783406130097",
+            "sourceHandle": "source",
+            "target": "0.8386658673435847",
+            "targetHandle": "target",
+            "id": "xy-edge__0.27672783406130097source-0.8386658673435847target",
             "selected": false
         }
     ]
